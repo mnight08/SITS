@@ -465,15 +465,3 @@ void Image_Recovery_Direct(double * recovered_reflectivity, complex<double>* dat
 	log<<"Reflectivity was built"<<endl;
 }
 
-//Output reconstruction for viewing
-void Output_Reflectivity(double * reflectivity,string file){
-	ofstream output;
-	output.open(file.c_str());
-	for(int n=0;n<N;n++){
-		for(int m=0;m<N;m++){
-		   output<<reflectivity[Image_Index(m,n)]<<" ";
-		}
-		output<<endl;
-	}
-	output.close();
-}

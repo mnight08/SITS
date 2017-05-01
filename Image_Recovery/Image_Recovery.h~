@@ -57,6 +57,48 @@ const int r_eps=q*q;
 //Number of weights at each level.
     const int P=N*N*q*q;
 
+//We need to enumerate the boxes, and pairings we are working with.  
+//Consistency is key.  In X_l there are 4^l cells.  In Y_l there are
+//4^{L-l}.  The number of pairs is 4^L=N^2 for any level. 
+//Each pair (A,B) at a scale corresponds to a number n=0,...N^2-1.
+//A=0,...,4^l-1, and B=0,...,4^{L-l}-1.  A simple map
+//is to take the first 2l bits of n to be A, and the last 2(L-l)
+//bits to be B n->(n/4^l-1,4n^l)=(A,B).
+//We always count from left to right, bottom up, so that we would start around (0,0), and end around
+//(1,1) 
+inline int A(int n, int l,ostream &log){
+	return (n/(int)pow(2.0,2*(L-l)));
+}
+
+//shift n to the left, so that only the last 2*(L-l) digits are non Zero, 
+//then shift back so that the first 2l bits are Zero.
+inline int B(int n, int l,ostream &log){
+	return n%(int)(pow(2.0,2*(L-l)));
+}
+
+//Parent of A is just A with its last two bits dropped
+inline int Parent(int A,ostream &log){
+	return A>>2;
+}
+
+//Children of B are numbers where we append two bits
+inline int Child(int B,int c,ostream &log){
+    return (B<<2)+c;
+}
+//There are N*N*r_eps weights to index.  Here, B needs to have at most 2l bits 
+inline int Weight_Index(int A, int B, int l, int t1, int t2,ostream &log){
+	return ((A<<(2*(L-l)))+B)*r_eps+q*t1+t2;
+}
+
+///Find the box that p is in  at level l. l=0 means only one cell.  
+//The unit box is naturally partitioned. The box that a point is in is completely determined by
+//the first 2l bits of its components. First l (from left) bits are where y is, next l are x.
+inline int Box(point p, int l,ostream &log){
+	//shifts x, and y left by l bits by multiplying by 2^l.
+	int column =(int) (p.x*pow(2.0,(double) l));
+	int row    =(int) (p.y*pow(2.0,(double) l));
+	return row*pow(2.0,(double) l)+column;
+}
 };
 
 
@@ -183,48 +225,6 @@ inline point Center(int l, int box,ostream &log){
 	return point(Center1d(l,b1),Center1d(l,b2));
 }
 
-//We need to enumerate the boxes, and pairings we are working with.  
-//Consistency is key.  In X_l there are 4^l cells.  In Y_l there are
-//4^{L-l}.  The number of pairs is 4^L=N^2 for any level. 
-//Each pair (A,B) at a scale corresponds to a number n=0,...N^2-1.
-//A=0,...,4^l-1, and B=0,...,4^{L-l}-1.  A simple map
-//is to take the first 2l bits of n to be A, and the last 2(L-l)
-//bits to be B n->(n/4^l-1,4n^l)=(A,B).
-//We always count from left to right, bottom up, so that we would start around (0,0), and end around
-//(1,1) 
-inline int A(int n, int l,ostream &log){
-	return (n/(int)pow(2.0,2*(L-l)));
-}
-
-//shift n to the left, so that only the last 2*(L-l) digits are non Zero, 
-//then shift back so that the first 2l bits are Zero.
-inline int B(int n, int l,ostream &log){
-	return n%(int)(pow(2.0,2*(L-l)));
-}
-
-//Parent of A is just A with its last two bits dropped
-inline int Parent(int A,ostream &log){
-	return A>>2;
-}
-
-//Children of B are numbers where we append two bits
-inline int Child(int B,int c,ostream &log){
-    return (B<<2)+c;
-}
-//There are N*N*r_eps weights to index.  Here, B needs to have at most 2l bits 
-inline int Weight_Index(int A, int B, int l, int t1, int t2,ostream &log){
-	return ((A<<(2*(L-l)))+B)*r_eps+q*t1+t2;
-}
-
-///Find the box that p is in  at level l. l=0 means only one cell.  
-//The unit box is naturally partitioned. The box that a point is in is completely determined by
-//the first 2l bits of its components. First l (from left) bits are where y is, next l are x.
-inline int Box(point p, int l,ostream &log){
-	//shifts x, and y left by l bits by multiplying by 2^l.
-	int column =(int) (p.x*pow(2.0,(double) l));
-	int row    =(int) (p.y*pow(2.0,(double) l));
-	return row*pow(2.0,(double) l)+column;
-}
 inline int Image_Index(int m, int n){
 	return N*n+m;
 }
