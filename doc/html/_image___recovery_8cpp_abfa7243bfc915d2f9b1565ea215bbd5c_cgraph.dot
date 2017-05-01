@@ -1,0 +1,17 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Read_In_Data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#ac7750c1791f32c6893190e3e136cd1be"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Data_Index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a3341b3789ebb3b250cb16a8da85fb685"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Image_Recovery_Direct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_data___generator_2_prototypes_8h.html#abfe1d8971eb97359fadf2eae913a240f"];
+  Node0 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Output_Reflectivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_data___generator_2_prototypes_8h.html#a8071097e5121cc7ed6eceb1fe2b2a8fd"];
+  Node0 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Image_Recovery_Butterfly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_data___generator_2_prototypes_8h.html#a104821657b13f54b621292608cefec18"];
+}

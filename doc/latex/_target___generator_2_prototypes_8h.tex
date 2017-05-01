@@ -1,0 +1,560 @@
+\hypertarget{_target___generator_2_prototypes_8h}{}\section{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Target\+\_\+\+Generator/\+Prototypes.h File Reference}
+\label{_target___generator_2_prototypes_8h}\index{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Target\+\_\+\+Generator/\+Prototypes.\+h@{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Target\+\_\+\+Generator/\+Prototypes.\+h}}
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpoint}{point}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a325b4b80c42799ef04293ca89c91a8ec}{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index} (int s, int w, int j)
+\begin{DoxyCompactList}\small\item\em !!!!!!\+Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a108bf510bc5bb509c831922e9c798eb8}{Read\+\_\+\+In\+\_\+\+Reflectivity} (double $\ast$reflectivity, string file)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}{Size\+\_\+\+Of\+\_\+\+Support} (double $\ast$reflectivity)
+\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_a398a71365b23d1c040265d5533776c01}{Incident\+\_\+\+Field} (int s, int w, double x, double y)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a7bda372c140e2175bfb8c5f407a3fa6f}{Norm} (double x, double y, double z)
+\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_a974c700eb23491a012ceeab54d82cdc2}{G} (double x, double y, double z, double w)
+\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_ae42eb598125814cc2888d4eadd7a04f8}{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point} (double x, double y, int w, int s, double $\ast$reflectivity, complex$<$ double $>$ $\ast$field\+\_\+on\+\_\+target\+\_\+support, int \hyperlink{_target___generator_2_prototypes_8h_a788d8695493e8fbe8a998049de220e25}{S})
+\item 
+complex$<$ double $>$ $\ast$ \hyperlink{_target___generator_2_prototypes_8h_ac94ea0064b7e3823260dba9d5e91e2fa}{Generate\+\_\+\+Data} (double $\ast$reflectivity, int \hyperlink{_target___generator_2_input_8h_a7b63ccc35ac484b9f41e37ccd0cb31bd}{K})
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_af552c71b8dfb2ef0f79eabc0025de558}{Output\+\_\+\+Data} (complex$<$ double $>$ $\ast$data, string file\+\_\+name)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a288e22b57b6a275d2416b635628b912b}{Grid\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, int l)
+\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+\hyperlink{classpoint}{point} \hyperlink{_target___generator_2_prototypes_8h_a7a65934f7f980eddd78a12d7e4df0340}{Grid\+\_\+\+Point} (double $\ast$grids, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t1, int t2, int l)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a1ffab4d5e34be0967882300ec826a7c0}{Proto\+\_\+\+Grid} (double $\ast$fillme)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_ac3f7a492d38929793b9a578ddb847b40}{Grid} (double $\ast$protogrid, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int l)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a2c8bbbf551b8475e4438c7e446c941c0}{Build\+\_\+\+Grids} (double $\ast$\&grids)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_ab22ec241f3209be09e1e533fcc4ad346}{L1d} (double $\ast$grids, int l, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, double x)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_ad21b6fd9efdf79f265b6fbd840ba3333}{L2d} (double $\ast$grids, int t1, int t2, int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int l, \hyperlink{classpoint}{point} y)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a3c1734cc6d5f500825aee562288a3926}{Swap} (complex$<$ double $>$ $\ast$\&current, complex$<$ double $>$ $\ast$\&previous)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a834305736990425f924af8cfac37d9b1}{Zero} (complex$<$ double $>$ $\ast$weights)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a04e0507a2c37563637243ef47ae51175}{Center1d} (int l, int box)
+\item 
+\hyperlink{classpoint}{point} \hyperlink{_target___generator_2_prototypes_8h_ab57255986abfcbd0c8c100f66fbecebf}{Center} (int l, int box)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A} (int n, int l)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B} (int n, int l)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_ac9357020f779cea9bdfe84a05b2f9d44}{Parent} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A})
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a944697486df50806fbeca3ed8cdcfc1d}{Child} (int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int c)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_afe52b0913e9641a3263b6a3672900d0c}{Weight\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A}, int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int l, int t1, int t2)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box} (\hyperlink{classpoint}{point} \hyperlink{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}{p}, int l)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a14e94e6a7e1880598ed6d9fc3588669d}{Image\+\_\+\+Index} (int m, int n)
+\item 
+int \hyperlink{_target___generator_2_prototypes_8h_a3341b3789ebb3b250cb16a8da85fb685}{Data\+\_\+\+Index} (int s, int w)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_aaa8c0f0c0fa51f2c1bf63d9d9fca49ea}{X} (int m)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a504ccb6f70325b74f611057c5b163ab3}{Y} (int n)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_ab10ccfd523ca128057e75d95bd0897e6}{Gamma\+\_\+\+D\+\_\+X} (double sl)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a565266436efe544e627ee991647892ce}{Gamma\+\_\+\+D\+\_\+Y} (double sl)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_ab82ce48e953537051e3bbae9b3358000}{Q} (int e)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a9506f98f883be991edacd12a2105dd8d}{W} (int w)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a788d8695493e8fbe8a998049de220e25}{S} (int s)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a104821657b13f54b621292608cefec18}{Image\+\_\+\+Recovery\+\_\+\+Butterfly} (double $\ast$\&recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_abfe1d8971eb97359fadf2eae913a240f}{Image\+\_\+\+Recovery\+\_\+\+Direct} (double $\ast$recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}{Output\+\_\+\+Reflectivity} (double $\ast$reflectivity, string file\+\_\+name)
+\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_ad28d23d18460a766bace637017e0ffae}{f} (\hyperlink{classpoint}{point} y, complex$<$ double $>$ $\ast$d)
+\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}{p} (double w)
+\item 
+complex$<$ double $>$ \hyperlink{_target___generator_2_prototypes_8h_a1518bf2507ae0de796462fe244a92884}{interp} (complex$<$ double $>$ $\ast$d, double sl, double qj)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a748e17292f693395243fe998c44ed79f}{phi} (\hyperlink{classpoint}{point} x, \hyperlink{classpoint}{point} y)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a285206837634162341a856a6e2cf8594}{Gamma\+\_\+X} (double s)
+\item 
+double \hyperlink{_target___generator_2_prototypes_8h_a12a050b07dfebcf7bd1a42b264e56d10}{Gamma\+\_\+Y} (double s)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a73589c048469dd00a6936e3e928f468b}{Test\+\_\+\+Grid\+\_\+\+Creation} ()
+\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a5d9bfe468d0fc4b2738aac8500d2ce2c}{Test\+\_\+\+Indexing} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a3fe2947dc824985804c88e259460b4f2}{Test\+\_\+\+Image\+\_\+\+Loading} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a49a3bbfc53d89d60fb40307fa7d32116}{Test\+\_\+\+Data\+\_\+\+Generation} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a4cadb9c91ab5b36a4d254bb06b4900f3}{Test\+\_\+\+Data\+\_\+\+Loading} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a7cf248ac1f08fe599358fd5bf302a1ba}{Test\+\_\+\+Image\+\_\+\+Recovery} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a8e9bfb1e2a0576c20ccc4d5fa4611828}{Test\+\_\+\+Image\+\_\+\+Output} ()
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_a5ca7abf31d308298176441f934aae798}{Print\+\_\+\+Grids} (double $\ast$grids)
+\item 
+void \hyperlink{_target___generator_2_prototypes_8h_accdc1d499c43bfea3c07bbcfd7dc3259}{Print\+\_\+\+Weights} (complex$<$ double $>$ $\ast$weights, int l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}\label{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!A@{A}}
+\index{A@{A}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{A()}{A()}}
+{\footnotesize\ttfamily int A (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}\label{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!B@{B}}
+\index{B@{B}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{B()}{B()}}
+{\footnotesize\ttfamily int B (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}\label{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Box@{Box}}
+\index{Box@{Box}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily int Box (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{p,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a2c8bbbf551b8475e4438c7e446c941c0}\label{_target___generator_2_prototypes_8h_a2c8bbbf551b8475e4438c7e446c941c0}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Build\+\_\+\+Grids@{Build\+\_\+\+Grids}}
+\index{Build\+\_\+\+Grids@{Build\+\_\+\+Grids}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Build\+\_\+\+Grids()}{Build\_Grids()}}
+{\footnotesize\ttfamily void Build\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{grids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ab57255986abfcbd0c8c100f66fbecebf}\label{_target___generator_2_prototypes_8h_ab57255986abfcbd0c8c100f66fbecebf}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Center@{Center}}
+\index{Center@{Center}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Center()}{Center()}}
+{\footnotesize\ttfamily \hyperlink{classpoint}{point} Center (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a04e0507a2c37563637243ef47ae51175}\label{_target___generator_2_prototypes_8h_a04e0507a2c37563637243ef47ae51175}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Center1d@{Center1d}}
+\index{Center1d@{Center1d}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Center1d()}{Center1d()}}
+{\footnotesize\ttfamily double Center1d (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a944697486df50806fbeca3ed8cdcfc1d}\label{_target___generator_2_prototypes_8h_a944697486df50806fbeca3ed8cdcfc1d}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Child@{Child}}
+\index{Child@{Child}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Child()}{Child()}}
+{\footnotesize\ttfamily int Child (\begin{DoxyParamCaption}\item[{int}]{B,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a3341b3789ebb3b250cb16a8da85fb685}\label{_target___generator_2_prototypes_8h_a3341b3789ebb3b250cb16a8da85fb685}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Data\+\_\+\+Index@{Data\+\_\+\+Index}}
+\index{Data\+\_\+\+Index@{Data\+\_\+\+Index}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Data\+\_\+\+Index()}{Data\_Index()}}
+{\footnotesize\ttfamily int Data\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 200 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ad28d23d18460a766bace637017e0ffae}\label{_target___generator_2_prototypes_8h_ad28d23d18460a766bace637017e0ffae}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!f@{f}}
+\index{f@{f}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{f()}{f()}}
+{\footnotesize\ttfamily complex$<$double$>$ f (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{y,  }\item[{complex$<$ double $>$ $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+!!!!!!!!!!!!!!!!!!\+Input functions!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+Definition at line 71 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a325b4b80c42799ef04293ca89c91a8ec}\label{_target___generator_2_prototypes_8h_a325b4b80c42799ef04293ca89c91a8ec}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index@{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index}}
+\index{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index@{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index()}{Field\_On\_Support\_Index()}}
+{\footnotesize\ttfamily int Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{w,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+!!!!!!\+Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// 
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a974c700eb23491a012ceeab54d82cdc2}\label{_target___generator_2_prototypes_8h_a974c700eb23491a012ceeab54d82cdc2}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!G@{G}}
+\index{G@{G}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{G()}{G()}}
+{\footnotesize\ttfamily complex$<$double$>$ G (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ab10ccfd523ca128057e75d95bd0897e6}\label{_target___generator_2_prototypes_8h_ab10ccfd523ca128057e75d95bd0897e6}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Gamma\+\_\+\+D\+\_\+X@{Gamma\+\_\+\+D\+\_\+X}}
+\index{Gamma\+\_\+\+D\+\_\+X@{Gamma\+\_\+\+D\+\_\+X}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Gamma\+\_\+\+D\+\_\+\+X()}{Gamma\_D\_X()}}
+{\footnotesize\ttfamily double Gamma\+\_\+\+D\+\_\+X (\begin{DoxyParamCaption}\item[{double}]{sl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 209 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a565266436efe544e627ee991647892ce}\label{_target___generator_2_prototypes_8h_a565266436efe544e627ee991647892ce}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Gamma\+\_\+\+D\+\_\+Y@{Gamma\+\_\+\+D\+\_\+Y}}
+\index{Gamma\+\_\+\+D\+\_\+Y@{Gamma\+\_\+\+D\+\_\+Y}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Gamma\+\_\+\+D\+\_\+\+Y()}{Gamma\_D\_Y()}}
+{\footnotesize\ttfamily double Gamma\+\_\+\+D\+\_\+Y (\begin{DoxyParamCaption}\item[{double}]{sl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 213 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a285206837634162341a856a6e2cf8594}\label{_target___generator_2_prototypes_8h_a285206837634162341a856a6e2cf8594}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Gamma\+\_\+X@{Gamma\+\_\+X}}
+\index{Gamma\+\_\+X@{Gamma\+\_\+X}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Gamma\+\_\+\+X()}{Gamma\_X()}}
+{\footnotesize\ttfamily double Gamma\+\_\+X (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a12a050b07dfebcf7bd1a42b264e56d10}\label{_target___generator_2_prototypes_8h_a12a050b07dfebcf7bd1a42b264e56d10}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Gamma\+\_\+Y@{Gamma\+\_\+Y}}
+\index{Gamma\+\_\+Y@{Gamma\+\_\+Y}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Gamma\+\_\+\+Y()}{Gamma\_Y()}}
+{\footnotesize\ttfamily double Gamma\+\_\+Y (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ac94ea0064b7e3823260dba9d5e91e2fa}\label{_target___generator_2_prototypes_8h_ac94ea0064b7e3823260dba9d5e91e2fa}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Generate\+\_\+\+Data@{Generate\+\_\+\+Data}}
+\index{Generate\+\_\+\+Data@{Generate\+\_\+\+Data}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Generate\+\_\+\+Data()}{Generate\_Data()}}
+{\footnotesize\ttfamily complex$<$double$>$$\ast$ Generate\+\_\+\+Data (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{int}]{K }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ac3f7a492d38929793b9a578ddb847b40}\label{_target___generator_2_prototypes_8h_ac3f7a492d38929793b9a578ddb847b40}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Grid@{Grid}}
+\index{Grid@{Grid}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily void Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{protogrid,  }\item[{int}]{Box,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a288e22b57b6a275d2416b635628b912b}\label{_target___generator_2_prototypes_8h_a288e22b57b6a275d2416b635628b912b}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Grid\+\_\+\+Index@{Grid\+\_\+\+Index}}
+\index{Grid\+\_\+\+Index@{Grid\+\_\+\+Index}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Grid\+\_\+\+Index()}{Grid\_Index()}}
+{\footnotesize\ttfamily int Grid\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{Box,  }\item[{int}]{t,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+!!!!!!!!!!!!!!!!!\+Functions for image reconstruction!!!!!!// \mbox{\Hypertarget{_target___generator_2_prototypes_8h_a7a65934f7f980eddd78a12d7e4df0340}\label{_target___generator_2_prototypes_8h_a7a65934f7f980eddd78a12d7e4df0340}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Grid\+\_\+\+Point@{Grid\+\_\+\+Point}}
+\index{Grid\+\_\+\+Point@{Grid\+\_\+\+Point}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Grid\+\_\+\+Point()}{Grid\_Point()}}
+{\footnotesize\ttfamily \hyperlink{classpoint}{point} Grid\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{Box,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a14e94e6a7e1880598ed6d9fc3588669d}\label{_target___generator_2_prototypes_8h_a14e94e6a7e1880598ed6d9fc3588669d}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Image\+\_\+\+Index@{Image\+\_\+\+Index}}
+\index{Image\+\_\+\+Index@{Image\+\_\+\+Index}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Index()}{Image\_Index()}}
+{\footnotesize\ttfamily int Image\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 197 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a104821657b13f54b621292608cefec18}\label{_target___generator_2_prototypes_8h_a104821657b13f54b621292608cefec18}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}}
+\index{Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Butterfly()}{Image\_Recovery\_Butterfly()}}
+{\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Butterfly (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_abfe1d8971eb97359fadf2eae913a240f}\label{_target___generator_2_prototypes_8h_abfe1d8971eb97359fadf2eae913a240f}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}}
+\index{Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Direct()}{Image\_Recovery\_Direct()}}
+{\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Direct (\begin{DoxyParamCaption}\item[{double $\ast$}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a398a71365b23d1c040265d5533776c01}\label{_target___generator_2_prototypes_8h_a398a71365b23d1c040265d5533776c01}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Incident\+\_\+\+Field@{Incident\+\_\+\+Field}}
+\index{Incident\+\_\+\+Field@{Incident\+\_\+\+Field}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Incident\+\_\+\+Field()}{Incident\_Field()}}
+{\footnotesize\ttfamily complex$<$double$>$ Incident\+\_\+\+Field (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{w,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a1518bf2507ae0de796462fe244a92884}\label{_target___generator_2_prototypes_8h_a1518bf2507ae0de796462fe244a92884}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!interp@{interp}}
+\index{interp@{interp}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily complex$<$double$>$ interp (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{d,  }\item[{double}]{sl,  }\item[{double}]{qj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ab22ec241f3209be09e1e533fcc4ad346}\label{_target___generator_2_prototypes_8h_ab22ec241f3209be09e1e533fcc4ad346}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!L1d@{L1d}}
+\index{L1d@{L1d}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{L1d()}{L1d()}}
+{\footnotesize\ttfamily double L1d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{l,  }\item[{int}]{Box,  }\item[{int}]{t,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ad21b6fd9efdf79f265b6fbd840ba3333}\label{_target___generator_2_prototypes_8h_ad21b6fd9efdf79f265b6fbd840ba3333}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!L2d@{L2d}}
+\index{L2d@{L2d}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{L2d()}{L2d()}}
+{\footnotesize\ttfamily double L2d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{B,  }\item[{int}]{l,  }\item[{\hyperlink{classpoint}{point}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a7bda372c140e2175bfb8c5f407a3fa6f}\label{_target___generator_2_prototypes_8h_a7bda372c140e2175bfb8c5f407a3fa6f}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Norm@{Norm}}
+\index{Norm@{Norm}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Norm()}{Norm()}}
+{\footnotesize\ttfamily double Norm (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_af552c71b8dfb2ef0f79eabc0025de558}\label{_target___generator_2_prototypes_8h_af552c71b8dfb2ef0f79eabc0025de558}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Output\+\_\+\+Data@{Output\+\_\+\+Data}}
+\index{Output\+\_\+\+Data@{Output\+\_\+\+Data}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Output\+\_\+\+Data()}{Output\_Data()}}
+{\footnotesize\ttfamily void Output\+\_\+\+Data (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{data,  }\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}\label{_target___generator_2_prototypes_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Output\+\_\+\+Reflectivity@{Output\+\_\+\+Reflectivity}}
+\index{Output\+\_\+\+Reflectivity@{Output\+\_\+\+Reflectivity}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Output\+\_\+\+Reflectivity()}{Output\_Reflectivity()}}
+{\footnotesize\ttfamily void Output\+\_\+\+Reflectivity (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 438 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}\label{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!p@{p}}
+\index{p@{p}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{p()}{p()}}
+{\footnotesize\ttfamily complex$<$double$>$ p (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ac9357020f779cea9bdfe84a05b2f9d44}\label{_target___generator_2_prototypes_8h_ac9357020f779cea9bdfe84a05b2f9d44}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Parent@{Parent}}
+\index{Parent@{Parent}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Parent()}{Parent()}}
+{\footnotesize\ttfamily int Parent (\begin{DoxyParamCaption}\item[{int}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a748e17292f693395243fe998c44ed79f}\label{_target___generator_2_prototypes_8h_a748e17292f693395243fe998c44ed79f}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!phi@{phi}}
+\index{phi@{phi}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{phi()}{phi()}}
+{\footnotesize\ttfamily double phi (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{x,  }\item[{\hyperlink{classpoint}{point}}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file Input.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a5ca7abf31d308298176441f934aae798}\label{_target___generator_2_prototypes_8h_a5ca7abf31d308298176441f934aae798}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Print\+\_\+\+Grids@{Print\+\_\+\+Grids}}
+\index{Print\+\_\+\+Grids@{Print\+\_\+\+Grids}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Print\+\_\+\+Grids()}{Print\_Grids()}}
+{\footnotesize\ttfamily void Print\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_accdc1d499c43bfea3c07bbcfd7dc3259}\label{_target___generator_2_prototypes_8h_accdc1d499c43bfea3c07bbcfd7dc3259}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Print\+\_\+\+Weights@{Print\+\_\+\+Weights}}
+\index{Print\+\_\+\+Weights@{Print\+\_\+\+Weights}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Print\+\_\+\+Weights()}{Print\_Weights()}}
+{\footnotesize\ttfamily void Print\+\_\+\+Weights (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{weights,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a1ffab4d5e34be0967882300ec826a7c0}\label{_target___generator_2_prototypes_8h_a1ffab4d5e34be0967882300ec826a7c0}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}}
+\index{Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Proto\+\_\+\+Grid()}{Proto\_Grid()}}
+{\footnotesize\ttfamily void Proto\+\_\+\+Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{fillme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ab82ce48e953537051e3bbae9b3358000}\label{_target___generator_2_prototypes_8h_ab82ce48e953537051e3bbae9b3358000}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Q@{Q}}
+\index{Q@{Q}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Q()}{Q()}}
+{\footnotesize\ttfamily double Q (\begin{DoxyParamCaption}\item[{int}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 221 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a108bf510bc5bb509c831922e9c798eb8}\label{_target___generator_2_prototypes_8h_a108bf510bc5bb509c831922e9c798eb8}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Read\+\_\+\+In\+\_\+\+Reflectivity@{Read\+\_\+\+In\+\_\+\+Reflectivity}}
+\index{Read\+\_\+\+In\+\_\+\+Reflectivity@{Read\+\_\+\+In\+\_\+\+Reflectivity}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Read\+\_\+\+In\+\_\+\+Reflectivity()}{Read\_In\_Reflectivity()}}
+{\footnotesize\ttfamily void Read\+\_\+\+In\+\_\+\+Reflectivity (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{string}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a788d8695493e8fbe8a998049de220e25}\label{_target___generator_2_prototypes_8h_a788d8695493e8fbe8a998049de220e25}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!S@{S}}
+\index{S@{S}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{S()}{S()}}
+{\footnotesize\ttfamily double S (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 224 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_ae42eb598125814cc2888d4eadd7a04f8}\label{_target___generator_2_prototypes_8h_ae42eb598125814cc2888d4eadd7a04f8}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point@{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point}}
+\index{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point@{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point()}{Scattered\_Field\_At\_Point()}}
+{\footnotesize\ttfamily complex$<$double$>$ Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{int}]{w,  }\item[{int}]{s,  }\item[{double $\ast$}]{reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{field\+\_\+on\+\_\+target\+\_\+support,  }\item[{int}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}\label{_target___generator_2_prototypes_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}}
+\index{Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Size\+\_\+\+Of\+\_\+\+Support()}{Size\_Of\_Support()}}
+{\footnotesize\ttfamily int Size\+\_\+\+Of\+\_\+\+Support (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Target.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a3c1734cc6d5f500825aee562288a3926}\label{_target___generator_2_prototypes_8h_a3c1734cc6d5f500825aee562288a3926}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Swap@{Swap}}
+\index{Swap@{Swap}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily void Swap (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$\&}]{current,  }\item[{complex$<$ double $>$ $\ast$\&}]{previous }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a49a3bbfc53d89d60fb40307fa7d32116}\label{_target___generator_2_prototypes_8h_a49a3bbfc53d89d60fb40307fa7d32116}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Data\+\_\+\+Generation@{Test\+\_\+\+Data\+\_\+\+Generation}}
+\index{Test\+\_\+\+Data\+\_\+\+Generation@{Test\+\_\+\+Data\+\_\+\+Generation}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Data\+\_\+\+Generation()}{Test\_Data\_Generation()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Data\+\_\+\+Generation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a4cadb9c91ab5b36a4d254bb06b4900f3}\label{_target___generator_2_prototypes_8h_a4cadb9c91ab5b36a4d254bb06b4900f3}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Data\+\_\+\+Loading@{Test\+\_\+\+Data\+\_\+\+Loading}}
+\index{Test\+\_\+\+Data\+\_\+\+Loading@{Test\+\_\+\+Data\+\_\+\+Loading}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Data\+\_\+\+Loading()}{Test\_Data\_Loading()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Data\+\_\+\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a73589c048469dd00a6936e3e928f468b}\label{_target___generator_2_prototypes_8h_a73589c048469dd00a6936e3e928f468b}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Grid\+\_\+\+Creation@{Test\+\_\+\+Grid\+\_\+\+Creation}}
+\index{Test\+\_\+\+Grid\+\_\+\+Creation@{Test\+\_\+\+Grid\+\_\+\+Creation}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Grid\+\_\+\+Creation()}{Test\_Grid\_Creation()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Grid\+\_\+\+Creation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+Definition at line 85 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a3fe2947dc824985804c88e259460b4f2}\label{_target___generator_2_prototypes_8h_a3fe2947dc824985804c88e259460b4f2}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Image\+\_\+\+Loading@{Test\+\_\+\+Image\+\_\+\+Loading}}
+\index{Test\+\_\+\+Image\+\_\+\+Loading@{Test\+\_\+\+Image\+\_\+\+Loading}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Loading()}{Test\_Image\_Loading()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a8e9bfb1e2a0576c20ccc4d5fa4611828}\label{_target___generator_2_prototypes_8h_a8e9bfb1e2a0576c20ccc4d5fa4611828}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Image\+\_\+\+Output@{Test\+\_\+\+Image\+\_\+\+Output}}
+\index{Test\+\_\+\+Image\+\_\+\+Output@{Test\+\_\+\+Image\+\_\+\+Output}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Output()}{Test\_Image\_Output()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a7cf248ac1f08fe599358fd5bf302a1ba}\label{_target___generator_2_prototypes_8h_a7cf248ac1f08fe599358fd5bf302a1ba}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Image\+\_\+\+Recovery@{Test\+\_\+\+Image\+\_\+\+Recovery}}
+\index{Test\+\_\+\+Image\+\_\+\+Recovery@{Test\+\_\+\+Image\+\_\+\+Recovery}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Recovery()}{Test\_Image\_Recovery()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Recovery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 109 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a5d9bfe468d0fc4b2738aac8500d2ce2c}\label{_target___generator_2_prototypes_8h_a5d9bfe468d0fc4b2738aac8500d2ce2c}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Test\+\_\+\+Indexing@{Test\+\_\+\+Indexing}}
+\index{Test\+\_\+\+Indexing@{Test\+\_\+\+Indexing}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Indexing()}{Test\_Indexing()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Indexing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a9506f98f883be991edacd12a2105dd8d}\label{_target___generator_2_prototypes_8h_a9506f98f883be991edacd12a2105dd8d}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!W@{W}}
+\index{W@{W}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{W()}{W()}}
+{\footnotesize\ttfamily double W (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 217 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_afe52b0913e9641a3263b6a3672900d0c}\label{_target___generator_2_prototypes_8h_afe52b0913e9641a3263b6a3672900d0c}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Weight\+\_\+\+Index@{Weight\+\_\+\+Index}}
+\index{Weight\+\_\+\+Index@{Weight\+\_\+\+Index}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Weight\+\_\+\+Index()}{Weight\_Index()}}
+{\footnotesize\ttfamily int Weight\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{A,  }\item[{int}]{B,  }\item[{int}]{l,  }\item[{int}]{t1,  }\item[{int}]{t2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_aaa8c0f0c0fa51f2c1bf63d9d9fca49ea}\label{_target___generator_2_prototypes_8h_aaa8c0f0c0fa51f2c1bf63d9d9fca49ea}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!X@{X}}
+\index{X@{X}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{X()}{X()}}
+{\footnotesize\ttfamily double X (\begin{DoxyParamCaption}\item[{int}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a504ccb6f70325b74f611057c5b163ab3}\label{_target___generator_2_prototypes_8h_a504ccb6f70325b74f611057c5b163ab3}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Y@{Y}}
+\index{Y@{Y}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Y()}{Y()}}
+{\footnotesize\ttfamily double Y (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_target___generator_2_prototypes_8h_a834305736990425f924af8cfac37d9b1}\label{_target___generator_2_prototypes_8h_a834305736990425f924af8cfac37d9b1}} 
+\index{Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}!Zero@{Zero}}
+\index{Zero@{Zero}!Target\+\_\+\+Generator/\+Prototypes.\+h@{Target\+\_\+\+Generator/\+Prototypes.\+h}}
+\subsubsection{\texorpdfstring{Zero()}{Zero()}}
+{\footnotesize\ttfamily void Zero (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{weights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

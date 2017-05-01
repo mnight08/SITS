@@ -1,82 +1,31 @@
-#include "input.h"
-//for 1d grid
-inline int Grid_Index(int Box,int t, int l,ostream &log){
-	return ((int) pow(2.0,(double) l)-1)*q+Box*q+t;
-}
-
-
-inline point Grid_Point(double * grids, int Box, int t1, int t2, int l,ostream &log){
-	int B1=Box/N;
-	int B2=Box%N;
-    return point(grids[Grid_Index(B1,t1,l)] ,grids[Grid_Index(B2,t2,l)]);
-
-}
-
-//give the chebyshev grid for [0,1] with q points, sorted from left to right.  
-inline void Proto_Grid(double *fillme,ostream &log){
-	for(int t=0;t<q;t++){
-		fillme[t]=.5*cos((q-1-t)*pi/(q-1))+.5;
-	}
-}
-
-//fill in the array with the chebyshev grid adapted to box  at level l.
-//Assumes that protogrid is already allocated.  b runs from 0 to 2^level-1
-inline void Grid(double *grid, double *proto_grid, int Box, int l,ostream &log){
-	double scale=pow(2,(double)-l);
-	for(int t=0;t<q;t++){
-		//shift protogrid by scale, to  grid from 0 to b.  Then shift by b*scale for the 
-
-		//corresponding box.
-		grid[t]=scale*(proto_grid[t]+Box);
-	}
-}
-
-//Fills grids with all the 1d grids for [0,1] we will need. There are 2N-1 grids, and each has q entries.
-//The function Grid_Index returns the appropriate index.  A tensor grid is used for higher dimensions
-inline void Build_Grids(double* &grids,ostream &log){
-	grids= new double[(2*N-1)*q];
-	//make the first q entries the chebyshev grid adapted to [0,1].
-	double * current_grid=grids+q;
-	Proto_Grid(grids,log);
-	//go through each scale
-	for( int l=1;l<=L;l++){
-		//go through each offset at that scale.
-		for(int Box=0;Box<(int)(pow(2.0,l));Box++){
-			Grid(current_grid,grids,Box,l);
-			current_grid=current_grid+q;
-		}
-	}
-
-}
-
-
-inline void Log_Grids(double* &grids,ostream &log){
-
-}
-
-//The t-th Lagrange basis polynomial for the grid evaluated at the point x
-inline double L1d(double *grids, int l, int Box, int t,double x,ostream &log){
-	double product=1;
-	int grid=Grid_Index(Box,q,l);
-	log<<"T!!"<<t;
-	for(int j=0;(j<q)&&(j!=t);j++){
-		product*=(x-grids[grid+t])/(grids[grid+t]-grids[grid+j]);
-	}
-	return product;
-}
-
-//Tensor interpolation L_t1(y.x)*L_t2(y.y). 
-//t goes up to q^2. B goes to N^2, so that t1, t2 are between 0, and q-1,
-//and B1, and B2 are between 0, and M-1
-inline double L2d(double *grids, int t1, int t2, int Box, int l,point y,ostream &log){
-    int B1=Box/N;
-	int B2=Box%M;
-    return L1d(grids,l,B1,t1,y.x)*L1d(grids,l,B2,t2,y.y);
-}
+#include <complex>
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <math.h>
+const complex<double> i(0,1);
+const double pi=3.14159265359;
+const double c_0=299792458;
+//Assume the samples are uniform and given at $(i+1/2N,j+1/2N)$ for $i,j=0,1,\ldots N-1$
+//N is the number of slow time samples, frequency samples.  There are $N^2$ space samples
+const int N=4;
+const int M=N*N;
 
 
 
-inline void Read_In_Data(complex<double> *data,string file,ostream &log){
+
+//Phase function.  All arguments are in $[0,1]^2$
+double phi(point x,point y){
+	return -(w_0-Band/2+y.y*Band)*(2*(Gamma_X(y.x)*x.x+Gamma_Y(y.x)*x.y-r)/c_0);
+
+
+class ImageRecoverer{
+    Target estimate;
+    Data data;
+    void load_data(string file){
 	ifstream input;
 	input.open(file.c_str());
 	for(int s=0;s<N;s++) {
@@ -85,30 +34,28 @@ inline void Read_In_Data(complex<double> *data,string file,ostream &log){
 		}
 	}
 	input.close();
+}};
+    void write(string filename);
+    virtual void recover_target;
+
+    //number of scattering events to consider in image recovery.
+    const int K=1;
+    //image plane height
+    const double image_height=0;
+    
 }
 
-inline void Swap(complex<double>* &current, complex<double>* &previous,ostream &log){
-	complex<double>* temp;
-	temp=previous;
-	previous=current;
-	current=temp;	
-}
+class ImageRecovererNaive:ImageRecoverer{
 
-inline void Zero(complex<double> * weights ,ostream &log){
-	for(int n=0;n<M*r_eps;n++)weights[n]=0;
-}
+};
 
-//return the center of the box from the left at level l. 
-inline double Center1d(int l, int box,ostream &log){
-	double scale=pow(2,(double)-l);
-	return (int)(scale*((double)box+0.5));
-}
-
-inline point Center(int l, int box,ostream &log){
-	int b1=box/N;
-	int b2=box%N;
-	return point(Center1d(l,b1),Center1d(l,b2));
-}
+class ImageRecovererButterfly:ImageRecoverer{
+//Be careful with this since, you assumed L=Log2(N)
+const int L=log2(N);
+const int q=16;
+const int r_eps=q*q;
+//Number of weights at each level.
+    const int P=N*N*q*q;
 
 //We need to enumerate the boxes, and pairings we are working with.  
 //Consistency is key.  In X_l there are 4^l cells.  In Y_l there are
@@ -152,6 +99,132 @@ inline int Box(point p, int l,ostream &log){
 	int row    =(int) (p.y*pow(2.0,(double) l));
 	return row*pow(2.0,(double) l)+column;
 }
+};
+
+
+class Math{
+
+    inline double Norm(double x,double y, double z){
+    	return sqrt(x*x+y*y+z*z);
+    }
+    
+//Linear interpolation.  Assume that data is sorted in frequency and slow time.
+complex<double> interp(complex<double>* d, double sl,double qj){	
+	int s=(int)(sl*N);
+	int w=(int)(qj*N);
+	return d[Data_Index(s,w)];
+}
+
+//normalized function domain
+complex<double> f(point y,complex<double>*d){
+	return (conj(p(w_0-Band/2+y.y*Band))*interp(d,y.x,y.y))
+		/((w_0-Band/2+y.y*Band)*abs(p(w_0-Band/2+y.y*Band))*abs(p(w_0-Band/2+y.y*Band)));
+}
+
+//The t-th Lagrange basis polynomial for the grid evaluated at the point x
+inline double L1d(Grid grid, int l, int Box, int t,double x,ostream &log){
+	double product=1;
+	ChebyshevGrid grid=ChebyshevGrid(Box,q,l);
+	log<<"T!!"<<t;
+	for(int j=0;(j<q)&&(j!=t);j++){
+		product*=(x-grid.values[grid+t])/(grids[grid+t]-grids[grid+j]);
+	}
+	return product;
+}
+
+//Tensor interpolation L_t1(y.x)*L_t2(y.y). 
+//t goes up to q^2. B goes to N^2, so that t1, t2 are between 0, and q-1,
+//and B1, and B2 are between 0, and M-1
+inline double L2d(double *grids, int t1, int t2, int Box, int l,point y,ostream &log){
+    int B1=Box/N;
+	int B2=Box%M;
+    return L1d(grids,l,B1,t1,y.x)*L1d(grids,l,B2,t2,y.y);
+}
+};
+}
+
+class ChebyshevGrid{
+
+//for 1d grid
+inline int Grid_Index(int Box,int t, int l,ostream &log){
+	return ((int) pow(2.0,(double) l)-1)*q+Box*q+t;
+}
+
+inline point Grid_Point(double * grids, int Box, int t1, int t2, int l,ostream &log){
+	int B1=Box/N;
+	int B2=Box%N;
+    return point(grids[Grid_Index(B1,t1,l)] ,grids[Grid_Index(B2,t2,l)]);
+
+}
+
+//give the chebyshev grid for [0,1] with q points, sorted from left to right.  
+inline void Proto_Grid(double *fillme,ostream &log){
+	for(int t=0;t<q;t++){
+		fillme[t]=.5*cos((q-1-t)*pi/(q-1))+.5;
+	}
+}
+
+//fill in the array with the chebyshev grid adapted to box  at level l.
+//Assumes that protogrid is already allocated.  b runs from 0 to 2^level-1
+inline void Grid(double *grid, double *proto_grid, int Box, int l,ostream &log){
+	double scale=pow(2,(double)-l);
+	for(int t=0;t<q;t++){
+		//shift protogrid by scale, to  grid from 0 to b.  Then shift by b*scale for the 
+
+		//corresponding box.
+		grid[t]=scale*(proto_grid[t]+Box);
+	}
+}
+
+}
+
+
+//Fills grids with all the 1d grids for [0,1] we will need. There are 2N-1 grids, and each has q entries.
+//The function Grid_Index returns the appropriate index.  A tensor grid is used for higher dimensions
+inline void Build_Grids(double* &grids,ostream &log){
+	grids= new double[(2*N-1)*q];
+	//make the first q entries the chebyshev grid adapted to [0,1].
+	double * current_grid=grids+q;
+	Proto_Grid(grids,log);
+	//go through each scale
+	for( int l=1;l<=L;l++){
+		//go through each offset at that scale.
+		for(int Box=0;Box<(int)(pow(2.0,l));Box++){
+			Grid(current_grid,grids,Box,l);
+			current_grid=current_grid+q;
+		}
+	}
+
+
+}
+
+
+
+
+
+inline void Swap(complex<double>* &current, complex<double>* &previous,ostream &log){
+	complex<double>* temp;
+	temp=previous;
+	previous=current;
+	current=temp;	
+}
+
+inline void Zero(complex<double> * weights ,ostream &log){
+	for(int n=0;n<M*r_eps;n++)weights[n]=0;
+}
+
+//return the center of the box from the left at level l. 
+inline double Center1d(int l, int box,ostream &log){
+	double scale=pow(2,(double)-l);
+	return (int)(scale*((double)box+0.5));
+}
+
+inline point Center(int l, int box,ostream &log){
+	int b1=box/N;
+	int b2=box%N;
+	return point(Center1d(l,b1),Center1d(l,b2));
+}
+
 inline int Image_Index(int m, int n){
 	return N*n+m;
 }

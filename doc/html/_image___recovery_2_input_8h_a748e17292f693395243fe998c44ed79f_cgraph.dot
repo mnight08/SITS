@@ -1,0 +1,11 @@
+digraph "phi"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node21 [label="phi",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node21 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Gamma_X",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_data___generator_2_input_8h.html#a285206837634162341a856a6e2cf8594"];
+  Node21 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Gamma_Y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_data___generator_2_input_8h.html#a12a050b07dfebcf7bd1a42b264e56d10"];
+}

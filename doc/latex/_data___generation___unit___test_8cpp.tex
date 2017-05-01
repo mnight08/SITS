@@ -1,0 +1,172 @@
+\hypertarget{_data___generation___unit___test_8cpp}{}\section{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Testing/\+Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.cpp File Reference}
+\label{_data___generation___unit___test_8cpp}\index{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Testing/\+Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Testing/\+Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+generation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}image\+\_\+recovery.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ofstream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{_data___generation___unit___test_8cpp_afeeb58172d4ef5dd2676c4cb3a5bea08}{phi} (double x1, double x2, double y1, double y2)
+\item 
+double \hyperlink{_data___generation___unit___test_8cpp_a2bc9dab971e913c166e1f9f5597971ae}{f} (double y1, double y2)
+\item 
+double \hyperlink{_data___generation___unit___test_8cpp_aeeb95c8189127d214acd24fa3720e9d2}{psi} (double x1, double x2, double y1, double y2)
+\item 
+int \hyperlink{_data___generation___unit___test_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a6aea2ec580dabdeff7cb3738f95dc4c8}{Output\+\_\+\+Weights} (ostream os, complex$<$ double $>$ $\ast$weights, int l)
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_ab005e77c7f55f8dcff07ec0f194c98aa}{Output\+\_\+\+Grids} (ostream os, double $\ast$grids)
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a73589c048469dd00a6936e3e928f468b}{Test\+\_\+\+Grid\+\_\+\+Creation} ()
+\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a1a74da74eecf3f12abcf0d623a67f31f}{Test\+\_\+\+Indexing} (ofstream log)
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a3fe2947dc824985804c88e259460b4f2}{Test\+\_\+\+Image\+\_\+\+Loading} ()
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a49a3bbfc53d89d60fb40307fa7d32116}{Test\+\_\+\+Data\+\_\+\+Generation} ()
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a4cadb9c91ab5b36a4d254bb06b4900f3}{Test\+\_\+\+Data\+\_\+\+Loading} ()
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a7cf248ac1f08fe599358fd5bf302a1ba}{Test\+\_\+\+Image\+\_\+\+Recovery} ()
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a8e9bfb1e2a0576c20ccc4d5fa4611828}{Test\+\_\+\+Image\+\_\+\+Output} ()
+\item 
+void \hyperlink{_data___generation___unit___test_8cpp_a4823f2cf4868a5b06871f204aba71a53}{Test\+\_\+\+Chebyshev\+\_\+\+Interpolation} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a2bc9dab971e913c166e1f9f5597971ae}\label{_data___generation___unit___test_8cpp_a2bc9dab971e913c166e1f9f5597971ae}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!f@{f}}
+\index{f@{f}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{f()}{f()}}
+{\footnotesize\ttfamily double f (\begin{DoxyParamCaption}\item[{double}]{y1,  }\item[{double}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_data___generation___unit___test_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!main@{main}}
+\index{main@{main}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\hyperlink{_data___generation___unit___test_8cpp_a8e9bfb1e2a0576c20ccc4d5fa4611828}{Test\+\_\+\+Image\+\_\+\+Output()}; 
+
+Definition at line 15 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_ab005e77c7f55f8dcff07ec0f194c98aa}\label{_data___generation___unit___test_8cpp_ab005e77c7f55f8dcff07ec0f194c98aa}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Output\+\_\+\+Grids@{Output\+\_\+\+Grids}}
+\index{Output\+\_\+\+Grids@{Output\+\_\+\+Grids}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Output\+\_\+\+Grids()}{Output\_Grids()}}
+{\footnotesize\ttfamily void Output\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{ostream}]{os,  }\item[{double $\ast$}]{grids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a6aea2ec580dabdeff7cb3738f95dc4c8}\label{_data___generation___unit___test_8cpp_a6aea2ec580dabdeff7cb3738f95dc4c8}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Output\+\_\+\+Weights@{Output\+\_\+\+Weights}}
+\index{Output\+\_\+\+Weights@{Output\+\_\+\+Weights}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Output\+\_\+\+Weights()}{Output\_Weights()}}
+{\footnotesize\ttfamily void Output\+\_\+\+Weights (\begin{DoxyParamCaption}\item[{ostream}]{os,  }\item[{complex$<$ double $>$ $\ast$}]{weights,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_afeeb58172d4ef5dd2676c4cb3a5bea08}\label{_data___generation___unit___test_8cpp_afeeb58172d4ef5dd2676c4cb3a5bea08}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!phi@{phi}}
+\index{phi@{phi}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{phi()}{phi()}}
+{\footnotesize\ttfamily double phi (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{x2,  }\item[{double}]{y1,  }\item[{double}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_aeeb95c8189127d214acd24fa3720e9d2}\label{_data___generation___unit___test_8cpp_aeeb95c8189127d214acd24fa3720e9d2}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!psi@{psi}}
+\index{psi@{psi}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{psi()}{psi()}}
+{\footnotesize\ttfamily double psi (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{x2,  }\item[{double}]{y1,  }\item[{double}]{y2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a4823f2cf4868a5b06871f204aba71a53}\label{_data___generation___unit___test_8cpp_a4823f2cf4868a5b06871f204aba71a53}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Chebyshev\+\_\+\+Interpolation@{Test\+\_\+\+Chebyshev\+\_\+\+Interpolation}}
+\index{Test\+\_\+\+Chebyshev\+\_\+\+Interpolation@{Test\+\_\+\+Chebyshev\+\_\+\+Interpolation}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Chebyshev\+\_\+\+Interpolation()}{Test\_Chebyshev\_Interpolation()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Chebyshev\+\_\+\+Interpolation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a49a3bbfc53d89d60fb40307fa7d32116}\label{_data___generation___unit___test_8cpp_a49a3bbfc53d89d60fb40307fa7d32116}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Data\+\_\+\+Generation@{Test\+\_\+\+Data\+\_\+\+Generation}}
+\index{Test\+\_\+\+Data\+\_\+\+Generation@{Test\+\_\+\+Data\+\_\+\+Generation}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Data\+\_\+\+Generation()}{Test\_Data\_Generation()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Data\+\_\+\+Generation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a4cadb9c91ab5b36a4d254bb06b4900f3}\label{_data___generation___unit___test_8cpp_a4cadb9c91ab5b36a4d254bb06b4900f3}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Data\+\_\+\+Loading@{Test\+\_\+\+Data\+\_\+\+Loading}}
+\index{Test\+\_\+\+Data\+\_\+\+Loading@{Test\+\_\+\+Data\+\_\+\+Loading}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Data\+\_\+\+Loading()}{Test\_Data\_Loading()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Data\+\_\+\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a73589c048469dd00a6936e3e928f468b}\label{_data___generation___unit___test_8cpp_a73589c048469dd00a6936e3e928f468b}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Grid\+\_\+\+Creation@{Test\+\_\+\+Grid\+\_\+\+Creation}}
+\index{Test\+\_\+\+Grid\+\_\+\+Creation@{Test\+\_\+\+Grid\+\_\+\+Creation}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Grid\+\_\+\+Creation()}{Test\_Grid\_Creation()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Grid\+\_\+\+Creation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+
+Definition at line 85 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a3fe2947dc824985804c88e259460b4f2}\label{_data___generation___unit___test_8cpp_a3fe2947dc824985804c88e259460b4f2}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Image\+\_\+\+Loading@{Test\+\_\+\+Image\+\_\+\+Loading}}
+\index{Test\+\_\+\+Image\+\_\+\+Loading@{Test\+\_\+\+Image\+\_\+\+Loading}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Loading()}{Test\_Image\_Loading()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Loading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a8e9bfb1e2a0576c20ccc4d5fa4611828}\label{_data___generation___unit___test_8cpp_a8e9bfb1e2a0576c20ccc4d5fa4611828}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Image\+\_\+\+Output@{Test\+\_\+\+Image\+\_\+\+Output}}
+\index{Test\+\_\+\+Image\+\_\+\+Output@{Test\+\_\+\+Image\+\_\+\+Output}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Output()}{Test\_Image\_Output()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a7cf248ac1f08fe599358fd5bf302a1ba}\label{_data___generation___unit___test_8cpp_a7cf248ac1f08fe599358fd5bf302a1ba}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Image\+\_\+\+Recovery@{Test\+\_\+\+Image\+\_\+\+Recovery}}
+\index{Test\+\_\+\+Image\+\_\+\+Recovery@{Test\+\_\+\+Image\+\_\+\+Recovery}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Image\+\_\+\+Recovery()}{Test\_Image\_Recovery()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Image\+\_\+\+Recovery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 109 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+
+\mbox{\Hypertarget{_data___generation___unit___test_8cpp_a1a74da74eecf3f12abcf0d623a67f31f}\label{_data___generation___unit___test_8cpp_a1a74da74eecf3f12abcf0d623a67f31f}} 
+\index{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}!Test\+\_\+\+Indexing@{Test\+\_\+\+Indexing}}
+\index{Test\+\_\+\+Indexing@{Test\+\_\+\+Indexing}!Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp@{Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Indexing()}{Test\_Indexing()}}
+{\footnotesize\ttfamily void Test\+\_\+\+Indexing (\begin{DoxyParamCaption}\item[{ofstream}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file Data\+\_\+\+Generation\+\_\+\+Unit\+\_\+\+Test.\+cpp.
+

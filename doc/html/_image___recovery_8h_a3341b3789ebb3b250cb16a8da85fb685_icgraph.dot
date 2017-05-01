@@ -1,0 +1,21 @@
+digraph "Data_Index"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node30 [label="Data_Index",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="interp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#a1518bf2507ae0de796462fe244a92884"];
+  Node31 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#ad28d23d18460a766bace637017e0ffae",tooltip="!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "];
+  Node32 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="Image_Recovery_Butterfly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a8f37a34ded6bb41f2a734c1218ef0dc7"];
+  Node30 -> Node34 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="point::point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpoint.html#a35a81eb47d874ab0ad36577aad5fc464"];
+  Node30 -> Node35 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="Read_In_Data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#ac7750c1791f32c6893190e3e136cd1be"];
+  Node35 -> Node36 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8cpp.html#abfa7243bfc915d2f9b1565ea215bbd5c"];
+  Node30 -> Node37 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="Image_Recovery_Direct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a15a2b54cb9d8aa4d5abd90802b1bc34c"];
+}

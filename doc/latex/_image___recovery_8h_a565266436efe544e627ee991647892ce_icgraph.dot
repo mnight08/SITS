@@ -1,0 +1,11 @@
+digraph "Gamma_D_Y"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node47 [label="Gamma_D_Y",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node47 -> Node48 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node48 [label="point::point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpoint.html#a35a81eb47d874ab0ad36577aad5fc464"];
+  Node47 -> Node49 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node49 [label="Image_Recovery_Direct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a15a2b54cb9d8aa4d5abd90802b1bc34c"];
+}

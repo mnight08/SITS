@@ -1,0 +1,208 @@
+.TH "C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Target_Generator/Input.h" 3 "Mon May 1 2017" "Version .001" "Sythetic Aperture Radar Image Testing Suite" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Target_Generator/Input.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'prototypes\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBINPUT\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const complex< double > \fBi\fP (0, 1)"
+.br
+.ti -1c
+.RI "complex< double > \fBG\fP (double x, double y, double z, double w)"
+.br
+.ti -1c
+.RI "double \fBNorm\fP (double x, double y, double z)"
+.br
+.ti -1c
+.RI "double \fBGamma_X\fP (double s)"
+.br
+.ti -1c
+.RI "double \fBGamma_Y\fP (double s)"
+.br
+.ti -1c
+.RI "double \fBphi\fP (\fBpoint\fP x, \fBpoint\fP y)"
+.br
+.ti -1c
+.RI "complex< double > \fBinterp\fP (complex< double > *d, double sl, double qj)"
+.br
+.ti -1c
+.RI "complex< double > \fBp\fP (double w)"
+.br
+.ti -1c
+.RI "complex< double > \fBf\fP (\fBpoint\fP y, complex< double > *d)"
+.br
+.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const double \fBpi\fP =3\&.14159265359"
+.br
+.ti -1c
+.RI "const double \fBc_0\fP =299792458"
+.br
+.ti -1c
+.RI "const int \fBN\fP =4"
+.br
+.ti -1c
+.RI "const int \fBM\fP =\fBN\fP*\fBN\fP"
+.br
+.ti -1c
+.RI "const int \fBK\fP =1"
+.br
+.ti -1c
+.RI "const double \fBw_0\fP =pow(10,9)"
+.br
+.ti -1c
+.RI "const double \fBBand\fP =pow(10,8)"
+.br
+.ti -1c
+.RI "const double \fBr\fP =100"
+.br
+.ti -1c
+.RI "const double \fBH\fP =100"
+.br
+.ti -1c
+.RI "const int \fBL\fP =log2(\fBN\fP)"
+.br
+.ti -1c
+.RI "const int \fBq\fP =16"
+.br
+.ti -1c
+.RI "const int \fBr_eps\fP =\fBq\fP*\fBq\fP"
+.br
+.ti -1c
+.RI "const double \fBimage_height\fP =0"
+.br
+.ti -1c
+.RI "const int \fBP\fP =\fBN\fP*\fBN\fP*\fBq\fP*\fBq\fP"
+.br
+.ti -1c
+.RI "const string \fBfilename\fP ='Easy'"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define INPUT"
+
+.PP
+Definition at line 3 of file Input\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "complex<double> f (\fBpoint\fP y, complex< double > * d)"
+
+.PP
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// !!!!!!!!!!!!!!!!!!Input functions!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+.PP
+Definition at line 71 of file Input\&.h\&.
+.SS "complex<double> G (double x, double y, double z, double w)\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file Input\&.h\&.
+.SS "double Gamma_X (double s)"
+
+.PP
+Definition at line 41 of file Input\&.h\&.
+.SS "double Gamma_Y (double s)"
+
+.PP
+Definition at line 45 of file Input\&.h\&.
+.SS "const complex<double> i (0, 1)"
+
+.SS "complex<double> interp (complex< double > * d, double sl, double qj)"
+
+.PP
+Definition at line 56 of file Input\&.h\&.
+.SS "double Norm (double x, double y, double z)\fC [inline]\fP"
+
+.PP
+Definition at line 37 of file Input\&.h\&.
+.SS "complex<double> p (double w)"
+
+.PP
+Definition at line 62 of file Input\&.h\&.
+.SS "double phi (\fBpoint\fP x, \fBpoint\fP y)"
+
+.PP
+Definition at line 50 of file Input\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "const double Band =pow(10,8)"
+
+.PP
+Definition at line 18 of file Input\&.h\&.
+.SS "const double c_0 =299792458"
+
+.PP
+Definition at line 8 of file Input\&.h\&.
+.SS "const string filename ='Easy'"
+
+.PP
+Definition at line 31 of file Input\&.h\&.
+.SS "const double H =100"
+
+.PP
+Definition at line 22 of file Input\&.h\&.
+.SS "const double image_height =0"
+
+.PP
+Definition at line 28 of file Input\&.h\&.
+.SS "const int K =1"
+
+.PP
+Definition at line 14 of file Input\&.h\&.
+.SS "const int L =log2(\fBN\fP)"
+
+.PP
+Definition at line 24 of file Input\&.h\&.
+.SS "const int M =\fBN\fP*\fBN\fP"
+
+.PP
+Definition at line 12 of file Input\&.h\&.
+.SS "const int N =4"
+
+.PP
+Definition at line 11 of file Input\&.h\&.
+.SS "const int P =\fBN\fP*\fBN\fP*\fBq\fP*\fBq\fP"
+
+.PP
+Definition at line 30 of file Input\&.h\&.
+.SS "const double pi =3\&.14159265359"
+
+.PP
+Definition at line 7 of file Input\&.h\&.
+.SS "const int q =16"
+
+.PP
+Definition at line 25 of file Input\&.h\&.
+.SS "const double r =100"
+
+.PP
+Definition at line 20 of file Input\&.h\&.
+.SS "const int r_eps =\fBq\fP*\fBq\fP"
+
+.PP
+Definition at line 26 of file Input\&.h\&.
+.SS "const double w_0 =pow(10,9)"
+
+.PP
+Definition at line 16 of file Input\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sythetic Aperture Radar Image Testing Suite from the source code\&.

@@ -6,9 +6,10 @@
 int main(int argc=1, char *filenames[])
 {
 
-	complex<double> *data=new complex<double>[M];
+	Data data(filenames);
+
 	//The reflectivity will be a list of $N^2$ real numbers.
-	double *recovered_reflectivity=new double[M];     
+	Target recovered_target;     
 	Read_In_Data(data,"../Data/"+filenames+".in");
 
 	Image_Recovery_Direct(recovered_reflectivity, data);

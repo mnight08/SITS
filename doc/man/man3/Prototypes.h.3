@@ -1,0 +1,366 @@
+.TH "C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Target_Generator/Prototypes.h" 3 "Mon May 1 2017" "Version .001" "Sythetic Aperture Radar Image Testing Suite" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Target_Generator/Prototypes.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <complex>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBpoint\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBField_On_Support_Index\fP (int s, int w, int j)"
+.br
+.RI "!!!!!!Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// "
+.ti -1c
+.RI "void \fBRead_In_Reflectivity\fP (double *reflectivity, string file)"
+.br
+.ti -1c
+.RI "int \fBSize_Of_Support\fP (double *reflectivity)"
+.br
+.ti -1c
+.RI "complex< double > \fBIncident_Field\fP (int s, int w, double x, double y)"
+.br
+.ti -1c
+.RI "double \fBNorm\fP (double x, double y, double z)"
+.br
+.ti -1c
+.RI "complex< double > \fBG\fP (double x, double y, double z, double w)"
+.br
+.ti -1c
+.RI "complex< double > \fBScattered_Field_At_Point\fP (double x, double y, int w, int s, double *reflectivity, complex< double > *field_on_target_support, int \fBS\fP)"
+.br
+.ti -1c
+.RI "complex< double > * \fBGenerate_Data\fP (double *reflectivity, int \fBK\fP)"
+.br
+.ti -1c
+.RI "void \fBOutput_Data\fP (complex< double > *data, string file_name)"
+.br
+.ti -1c
+.RI "int \fBGrid_Index\fP (int \fBBox\fP, int t, int l)"
+.br
+.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
+.ti -1c
+.RI "\fBpoint\fP \fBGrid_Point\fP (double *grids, int \fBBox\fP, int t1, int t2, int l)"
+.br
+.ti -1c
+.RI "void \fBProto_Grid\fP (double *fillme)"
+.br
+.ti -1c
+.RI "void \fBGrid\fP (double *protogrid, int \fBBox\fP, int l)"
+.br
+.ti -1c
+.RI "void \fBBuild_Grids\fP (double *&grids)"
+.br
+.ti -1c
+.RI "double \fBL1d\fP (double *grids, int l, int \fBBox\fP, int t, double x)"
+.br
+.ti -1c
+.RI "double \fBL2d\fP (double *grids, int t1, int t2, int \fBB\fP, int l, \fBpoint\fP y)"
+.br
+.ti -1c
+.RI "void \fBSwap\fP (complex< double > *&current, complex< double > *&previous)"
+.br
+.ti -1c
+.RI "void \fBZero\fP (complex< double > *weights)"
+.br
+.ti -1c
+.RI "double \fBCenter1d\fP (int l, int box)"
+.br
+.ti -1c
+.RI "\fBpoint\fP \fBCenter\fP (int l, int box)"
+.br
+.ti -1c
+.RI "int \fBA\fP (int n, int l)"
+.br
+.ti -1c
+.RI "int \fBB\fP (int n, int l)"
+.br
+.ti -1c
+.RI "int \fBParent\fP (int \fBA\fP)"
+.br
+.ti -1c
+.RI "int \fBChild\fP (int \fBB\fP, int c)"
+.br
+.ti -1c
+.RI "int \fBWeight_Index\fP (int \fBA\fP, int \fBB\fP, int l, int t1, int t2)"
+.br
+.ti -1c
+.RI "int \fBBox\fP (\fBpoint\fP \fBp\fP, int l)"
+.br
+.ti -1c
+.RI "int \fBImage_Index\fP (int m, int n)"
+.br
+.ti -1c
+.RI "int \fBData_Index\fP (int s, int w)"
+.br
+.ti -1c
+.RI "double \fBX\fP (int m)"
+.br
+.ti -1c
+.RI "double \fBY\fP (int n)"
+.br
+.ti -1c
+.RI "double \fBGamma_D_X\fP (double sl)"
+.br
+.ti -1c
+.RI "double \fBGamma_D_Y\fP (double sl)"
+.br
+.ti -1c
+.RI "double \fBQ\fP (int e)"
+.br
+.ti -1c
+.RI "double \fBW\fP (int w)"
+.br
+.ti -1c
+.RI "double \fBS\fP (int s)"
+.br
+.ti -1c
+.RI "void \fBImage_Recovery_Butterfly\fP (double *&recovered_reflectivity, complex< double > *data)"
+.br
+.ti -1c
+.RI "void \fBImage_Recovery_Direct\fP (double *recovered_reflectivity, complex< double > *data)"
+.br
+.ti -1c
+.RI "void \fBOutput_Reflectivity\fP (double *reflectivity, string file_name)"
+.br
+.ti -1c
+.RI "complex< double > \fBf\fP (\fBpoint\fP y, complex< double > *d)"
+.br
+.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
+.ti -1c
+.RI "complex< double > \fBp\fP (double w)"
+.br
+.ti -1c
+.RI "complex< double > \fBinterp\fP (complex< double > *d, double sl, double qj)"
+.br
+.ti -1c
+.RI "double \fBphi\fP (\fBpoint\fP x, \fBpoint\fP y)"
+.br
+.ti -1c
+.RI "double \fBGamma_X\fP (double s)"
+.br
+.ti -1c
+.RI "double \fBGamma_Y\fP (double s)"
+.br
+.ti -1c
+.RI "void \fBTest_Grid_Creation\fP ()"
+.br
+.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
+.ti -1c
+.RI "void \fBTest_Indexing\fP ()"
+.br
+.ti -1c
+.RI "void \fBTest_Image_Loading\fP ()"
+.br
+.ti -1c
+.RI "void \fBTest_Data_Generation\fP ()"
+.br
+.ti -1c
+.RI "void \fBTest_Data_Loading\fP ()"
+.br
+.ti -1c
+.RI "void \fBTest_Image_Recovery\fP ()"
+.br
+.ti -1c
+.RI "void \fBTest_Image_Output\fP ()"
+.br
+.ti -1c
+.RI "void \fBPrint_Grids\fP (double *grids)"
+.br
+.ti -1c
+.RI "void \fBPrint_Weights\fP (complex< double > *weights, int l)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int A (int n, int l)\fC [inline]\fP"
+
+.SS "int B (int n, int l)\fC [inline]\fP"
+
+.SS "int Box (\fBpoint\fP p, int l)\fC [inline]\fP"
+
+.SS "void Build_Grids (double *& grids)\fC [inline]\fP"
+
+.SS "\fBpoint\fP Center (int l, int box)\fC [inline]\fP"
+
+.SS "double Center1d (int l, int box)\fC [inline]\fP"
+
+.SS "int Child (int B, int c)\fC [inline]\fP"
+
+.SS "int Data_Index (int s, int w)\fC [inline]\fP"
+
+.PP
+Definition at line 200 of file Image_Recovery\&.h\&.
+.SS "complex<double> f (\fBpoint\fP y, complex< double > * d)"
+
+.PP
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// !!!!!!!!!!!!!!!!!!Input functions!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+.PP
+Definition at line 71 of file Input\&.h\&.
+.SS "int Field_On_Support_Index (int s, int w, int j)\fC [inline]\fP"
+
+.PP
+!!!!!!Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// 
+.SS "complex<double> G (double x, double y, double z, double w)\fC [inline]\fP"
+
+.PP
+Definition at line 33 of file Input\&.h\&.
+.SS "double Gamma_D_X (double sl)\fC [inline]\fP"
+
+.PP
+Definition at line 209 of file Image_Recovery\&.h\&.
+.SS "double Gamma_D_Y (double sl)\fC [inline]\fP"
+
+.PP
+Definition at line 213 of file Image_Recovery\&.h\&.
+.SS "double Gamma_X (double s)"
+
+.PP
+Definition at line 41 of file Input\&.h\&.
+.SS "double Gamma_Y (double s)"
+
+.PP
+Definition at line 45 of file Input\&.h\&.
+.SS "complex<double>* Generate_Data (double * reflectivity, int K)"
+
+.SS "void Grid (double * protogrid, int Box, int l)\fC [inline]\fP"
+
+.SS "int Grid_Index (int Box, int t, int l)\fC [inline]\fP"
+
+.PP
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// !!!!!!!!!!!!!!!!!Functions for image reconstruction!!!!!!// 
+.SS "\fBpoint\fP Grid_Point (double * grids, int Box, int t1, int t2, int l)\fC [inline]\fP"
+
+.SS "int Image_Index (int m, int n)\fC [inline]\fP"
+
+.PP
+Definition at line 197 of file Image_Recovery\&.h\&.
+.SS "void Image_Recovery_Butterfly (double *& recovered_reflectivity, complex< double > * data)"
+
+.SS "void Image_Recovery_Direct (double * recovered_reflectivity, complex< double > * data)"
+
+.SS "complex<double> Incident_Field (int s, int w, double x, double y)"
+
+.SS "complex<double> interp (complex< double > * d, double sl, double qj)"
+
+.PP
+Definition at line 56 of file Input\&.h\&.
+.SS "double L1d (double * grids, int l, int Box, int t, double x)\fC [inline]\fP"
+
+.SS "double L2d (double * grids, int t1, int t2, int B, int l, \fBpoint\fP y)\fC [inline]\fP"
+
+.SS "double Norm (double x, double y, double z)\fC [inline]\fP"
+
+.PP
+Definition at line 37 of file Input\&.h\&.
+.SS "void Output_Data (complex< double > * data, string file_name)\fC [inline]\fP"
+
+.SS "void Output_Reflectivity (double * reflectivity, string file_name)"
+
+.PP
+Definition at line 438 of file Image_Recovery\&.h\&.
+.SS "complex<double> p (double w)"
+
+.PP
+Definition at line 62 of file Input\&.h\&.
+.SS "int Parent (int A)\fC [inline]\fP"
+
+.SS "double phi (\fBpoint\fP x, \fBpoint\fP y)"
+
+.PP
+Definition at line 50 of file Input\&.h\&.
+.SS "void Print_Grids (double * grids)\fC [inline]\fP"
+
+.SS "void Print_Weights (complex< double > * weights, int l)\fC [inline]\fP"
+
+.SS "void Proto_Grid (double * fillme)\fC [inline]\fP"
+
+.SS "double Q (int e)\fC [inline]\fP"
+
+.PP
+Definition at line 221 of file Image_Recovery\&.h\&.
+.SS "void Read_In_Reflectivity (double * reflectivity, string file)"
+
+.SS "double S (int s)\fC [inline]\fP"
+
+.PP
+Definition at line 224 of file Image_Recovery\&.h\&.
+.SS "complex<double> Scattered_Field_At_Point (double x, double y, int w, int s, double * reflectivity, complex< double > * field_on_target_support, int S)"
+
+.SS "int Size_Of_Support (double * reflectivity)"
+
+.PP
+Definition at line 43 of file Target\&.h\&.
+.SS "void Swap (complex< double > *& current, complex< double > *& previous)\fC [inline]\fP"
+
+.SS "void Test_Data_Generation ()\fC [inline]\fP"
+
+.PP
+Definition at line 103 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Data_Loading ()\fC [inline]\fP"
+
+.PP
+Definition at line 106 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Grid_Creation ()\fC [inline]\fP"
+
+.PP
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+.PP
+Definition at line 85 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Image_Loading ()\fC [inline]\fP"
+
+.PP
+Definition at line 99 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Image_Output ()\fC [inline]\fP"
+
+.PP
+Definition at line 112 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Image_Recovery ()\fC [inline]\fP"
+
+.PP
+Definition at line 109 of file Data_Generation_Unit_Test\&.cpp\&.
+.SS "void Test_Indexing ()\fC [inline]\fP"
+
+.SS "double W (int w)\fC [inline]\fP"
+
+.PP
+Definition at line 217 of file Image_Recovery\&.h\&.
+.SS "int Weight_Index (int A, int B, int l, int t1, int t2)\fC [inline]\fP"
+
+.SS "double X (int m)\fC [inline]\fP"
+
+.PP
+Definition at line 203 of file Image_Recovery\&.h\&.
+.SS "double Y (int n)\fC [inline]\fP"
+
+.PP
+Definition at line 206 of file Image_Recovery\&.h\&.
+.SS "void Zero (complex< double > * weights)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Sythetic Aperture Radar Image Testing Suite from the source code\&.

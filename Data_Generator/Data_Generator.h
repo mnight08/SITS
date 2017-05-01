@@ -1,21 +1,46 @@
-#include "input.h"
-//Input  and output````````````````````````````///
-double* Read_In_Reflectivity(string infile_name){
+const complex<double> i(0,1);
+const double pi=3.14159265359;
+const double c_0=299792458;
+//Assume the samples are uniform and given at $(i+1/2N,j+1/2N)$ for $i,j=0,1,\ldots N-1$
+//N is the number of slow time, frequency samples.  There are $N^2$ space samples
+const int N=4;
+const int M=N*N;
+//number of scattering events to consider.
 
-    
-    //Reflectivities are real.  There are N^2=M image points.
-    double *reflectivity=new double[M];
-    ifstream input;
-    input.open((infile_name+".in").c_str());
-    for(int n=0;n<N;n++) {
-	for(int m=0;m<N;m++){
-	   input>>reflectivity[Image_Index(m,n)];
-	}
-    }
-    input.close();
+
+const int K=1;
+//image plane height
+const double image_height=0;
+
+
+//normalized function domain
+complex<double> f(point y,complex<double>*d){
+	return (conj(p(w_0-Band/2+y.y*Band))*interp(d,y.x,y.y))
+		/((w_0-Band/2+y.y*Band)*abs(p(w_0-Band/2+y.y*Band))*abs(p(w_0-Band/2+y.y*Band)));
 }
 
-inline void Output_Data(complex<double> *data, string outfile_name){
+class DataGenerator{
+    //N is number of bounces.
+    virtual void GenerateData(float [] x, float [] y, n, m, int N);
+    virtual void LoadTarget(Target& T);
+    virtual void Write();
+
+    Target target;  
+    Data data;
+
+    DataGenerator{
+    
+    }
+
+};
+
+class DataGenerator2d: DataGenerator{
+
+
+    void write(ofstream &file)
+    {
+
+        inline void Output_Data(complex<double> *data, string outfile_name){
 	ofstream output;
 	output.open((outfile_name+".out").c_str());
 	for(int s=0;s<N;s++){
@@ -25,18 +50,51 @@ inline void Output_Data(complex<double> *data, string outfile_name){
 		output<<endl;
 	}
 	output.close();
-}
+        }
+    }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~///
 
-//Number of non zero entries in $v$
-int Size_Of_Support(double *reflectivity){
-	int size=0;
-	for(int m=0;m<N;m++)
-		for(int n=0;n<N;n++)
-			if(reflectivity[Image_Index(m,n)]!=0)
-				size++;
-	return size;
+
+
+
 }
+
+
+//The data that we would collect physically.  Data 
+class Data{
+    String format="RAW";
+
+};
+
+class Data2d:Data{
+
+
+}
+
+/**
+ *A SAR is a system that has a moving antenna which coherently 
+ *
+ *
+ * **/
+class SAR{
+    point2d flight_path(float t);
+    point2d 
+//center frequency
+const double w_0=pow(10,9);
+//Bandwidth
+const double Band=pow(10,8);
+//radius of flight path
+const double r=100;
+//Flight height
+const double H=100;
+
+}
+
+class DataManifold{
+    virtual write();
+};
+
+class Field{
 
 //Incident field at a point, slow time sample, and frequency sample. Assumes that Antenna height is fixed.
 complex<double> Incident_Field(int s, int w, double x, double y,double z){
@@ -62,26 +120,19 @@ complex<double> Scattered_Field_At_Point(double x, double y,int w,int s,double*
 	}
 	return (-1.0*W(w)*W(w))*field_at_point/((double) N*N);
 }
- 
-void Generate_Data(string infilename){
-    double *reflectivity=Read_In_Reflectivity(infilename);
-    complex<double> *data=Generate_Data(reflectivity,1);
-    string outfilename=infilename.erase(infilename.end()-3,infilename.end())+".out";
-    Output_Data(data,outfilename);
-}
 
-//Generate data due to the reflectivity funciton and number of scattering events K
-complex<double> *Generate_Data(double *reflectivity,int K)
+
+///Generate data due to the target with number of scattering events K
+void Generate_Data2dNaive(int K)
 {
     //Data is complex valued.  There are N^2=M data points.
     //complex<double> *data=new complex<double>[M];
-    
-	complex<double> *data=new complex<double>[N*N];
+    complex<double> *data=new complex<double>[N*N];
   		
-	int SP=Size_Of_Support(reflectivity);
-	std::cout<< "Size of Support is "<<SP<<endl;
+    int SP=target.Size_Of_Support();
+    std::cout<< "Size of Support is "<<SP<<endl;
 	
-	//Initialize to the incident field.
+    //Initialize to the incident field.
 	complex<double>	*field_on_target_support=new complex<double>[N*N*SP];
 
 	//target support index
@@ -156,6 +207,20 @@ inline int Field_On_Support_Index(int s, int w, int j)
 
 	return N*N*j+N*s+w;
 }
+
+};
+
+
+
+
+ 
+void Generate_Data(string infilename){
+    target.load(infilename);
+    data=Generate_Data(reflectivity,1);
+    string outfilename=infilename.erase(infilename.end()-3,infilename.end())+".out";
+    Output_Data(data,outfilename);
+}
+
 
 
 

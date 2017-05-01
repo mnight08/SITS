@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['l1d',['L1d',['../_data___generator_2_prototypes_8h.html#ab22ec241f3209be09e1e533fcc4ad346',1,'L1d(double *grids, int l, int Box, int t, double x):&#160;Prototypes.h'],['../_image___recovery_8h.html#ab22ec241f3209be09e1e533fcc4ad346',1,'L1d(double *grids, int l, int Box, int t, double x):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#a2d1bc38cf6227eef1d7b451056a9c7f0',1,'L1d(double *grids, int l, int Box, int t, double x, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#ab22ec241f3209be09e1e533fcc4ad346',1,'L1d(double *grids, int l, int Box, int t, double x):&#160;Prototypes.h']]],
+  ['l2d',['L2d',['../_data___generator_2_prototypes_8h.html#ad21b6fd9efdf79f265b6fbd840ba3333',1,'L2d(double *grids, int t1, int t2, int B, int l, point y):&#160;Prototypes.h'],['../_image___recovery_8h.html#ad21b6fd9efdf79f265b6fbd840ba3333',1,'L2d(double *grids, int t1, int t2, int B, int l, point y):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#ace05dbe0dad3c958492748dde4d076b2',1,'L2d(double *grids, int t1, int t2, int Box, int l, point y, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#ad21b6fd9efdf79f265b6fbd840ba3333',1,'L2d(double *grids, int t1, int t2, int B, int l, point y):&#160;Prototypes.h']]],
+  ['loadtarget',['LoadTarget',['../_target_8h.html#a11f2141011fb5889943426775292b927',1,'Target.h']]],
+  ['log_5fgrids',['Log_Grids',['../_image___recovery_8h.html#a1a9b3d8db3f4202d35c6df080f59b635',1,'Image_Recovery.h']]]
+];

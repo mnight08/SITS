@@ -1,0 +1,13 @@
+digraph "Image_Index"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node63 [label="Image_Index",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node63 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node64 [label="Image_Recovery_Butterfly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a8f37a34ded6bb41f2a734c1218ef0dc7"];
+  Node63 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node65 [label="Image_Recovery_Direct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a15a2b54cb9d8aa4d5abd90802b1bc34c"];
+  Node63 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node66 [label="Output_Reflectivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#a8071097e5121cc7ed6eceb1fe2b2a8fd"];
+}

@@ -1,0 +1,18 @@
+digraph "Gamma_Y"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node48 [label="Gamma_Y",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node48 -> Node49 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node49 [label="phi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#a748e17292f693395243fe998c44ed79f"];
+  Node49 -> Node50 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node50 [label="Image_Recovery_Butterfly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a8f37a34ded6bb41f2a734c1218ef0dc7"];
+  Node48 -> Node51 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node51 [label="Gamma_D_X",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#ab10ccfd523ca128057e75d95bd0897e6"];
+  Node51 -> Node52 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node52 [label="Image_Recovery_Direct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_image___recovery_8h.html#a15a2b54cb9d8aa4d5abd90802b1bc34c"];
+  Node48 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node53 [label="Gamma_D_Y",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_target___generator_2_prototypes_8h.html#a565266436efe544e627ee991647892ce"];
+  Node53 -> Node52 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}
