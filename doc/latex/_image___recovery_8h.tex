@@ -7,44 +7,41 @@
 {\ttfamily \#include $<$cstring$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_image_recoverer_naive}{Image\+Recoverer\+Naive}
+\item 
+class \hyperlink{class_image_recoverer_butterfly}{Image\+Recoverer\+Butterfly}
+\item 
+class \hyperlink{class_math}{Math}
+\item 
+class \hyperlink{class_chebyshev_grid}{Chebyshev\+Grid}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{_image___recovery_8h_a60dd92eb39d20b28c6f5d62aa28dbc37}{Grid\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, int l, ostream \&log)
+const complex$<$ double $>$ \hyperlink{_image___recovery_8h_a5d6816662449d5e74ab1f78234044260}{i} (0, 1)
 \item 
-int \hyperlink{_image___recovery_8h_a288e22b57b6a275d2416b635628b912b}{Grid\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, int l)
-\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!\+Functions for image reconstruction!!!!!!// \end{DoxyCompactList}\item 
-\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_a7a65934f7f980eddd78a12d7e4df0340}{Grid\+\_\+\+Point} (double $\ast$grids, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t1, int t2, int l)
+double \hyperlink{_image___recovery_8h_a748e17292f693395243fe998c44ed79f}{phi} (\hyperlink{classpoint}{point} x, \hyperlink{classpoint}{point} y)
 \item 
-void \hyperlink{_image___recovery_8h_a1ffab4d5e34be0967882300ec826a7c0}{Proto\+\_\+\+Grid} (double $\ast$fillme)
+class \hyperlink{class_chebyshev_grid}{Chebyshev\+Grid} \hyperlink{_image___recovery_8h_aaee6d4bac5b77750e8123b90b04b0f64}{Build\+\_\+\+Grids} (double $\ast$\&grids, ostream \&log)
 \item 
-void \hyperlink{_image___recovery_8h_ac3f7a492d38929793b9a578ddb847b40}{Grid} (double $\ast$protogrid, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int l)
+int \hyperlink{_image___recovery_8h_a62347f3241890f6d65a6e3af9a3bf962}{Grid\+\_\+\+Index} (int Box, int t, int l, ostream \&log)
 \item 
-void \hyperlink{_image___recovery_8h_a2c8bbbf551b8475e4438c7e446c941c0}{Build\+\_\+\+Grids} (double $\ast$\&grids)
+\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_affc2a9db5bc53c5df9790971aedd5e74}{Grid\+\_\+\+Point} (double $\ast$grids, int Box, int t1, int t2, int l, ostream \&log)
 \item 
-double \hyperlink{_image___recovery_8h_ab22ec241f3209be09e1e533fcc4ad346}{L1d} (double $\ast$grids, int l, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, double x)
+void \hyperlink{_image___recovery_8h_a1977b3edd24258fda32b892bc8db92ac}{Proto\+\_\+\+Grid} (double $\ast$fillme, ostream \&log)
 \item 
-double \hyperlink{_image___recovery_8h_ad21b6fd9efdf79f265b6fbd840ba3333}{L2d} (double $\ast$grids, int t1, int t2, int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int l, \hyperlink{classpoint}{point} y)
+void \hyperlink{_image___recovery_8h_ae58c653757bb67d98686b671f1c44e12}{Grid} (double $\ast$grid, double $\ast$proto\+\_\+grid, int Box, int l, ostream \&log)
 \item 
-void \hyperlink{_image___recovery_8h_a3c1734cc6d5f500825aee562288a3926}{Swap} (complex$<$ double $>$ $\ast$\&current, complex$<$ double $>$ $\ast$\&previous)
+void \hyperlink{_image___recovery_8h_a1c728a1d30427d7feace8e4a987fe5d3}{Swap} (complex$<$ double $>$ $\ast$\&current, complex$<$ double $>$ $\ast$\&previous, ostream \&log)
 \item 
-void \hyperlink{_image___recovery_8h_a834305736990425f924af8cfac37d9b1}{Zero} (complex$<$ double $>$ $\ast$weights)
+void \hyperlink{_image___recovery_8h_aabf258d2c2795ffa48f98b9c7d017413}{Zero} (complex$<$ double $>$ $\ast$weights, ostream \&log)
 \item 
-double \hyperlink{_image___recovery_8h_a04e0507a2c37563637243ef47ae51175}{Center1d} (int l, int box)
+double \hyperlink{_image___recovery_8h_a6819ade65043183bc70e5cb2568fb94c}{Center1d} (int l, int box, ostream \&log)
 \item 
-\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_ab57255986abfcbd0c8c100f66fbecebf}{Center} (int l, int box)
-\item 
-int \hyperlink{_image___recovery_8h_af848dc3b07b88f9286b59860c94b3f42}{A} (int n, int l)
-\item 
-int \hyperlink{_image___recovery_8h_a4b8f9baf3002537eae57e8c034e3a388}{B} (int n, int l)
-\item 
-int \hyperlink{_image___recovery_8h_ac9357020f779cea9bdfe84a05b2f9d44}{Parent} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A})
-\item 
-int \hyperlink{_image___recovery_8h_a944697486df50806fbeca3ed8cdcfc1d}{Child} (int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int c)
-\item 
-int \hyperlink{_image___recovery_8h_afe52b0913e9641a3263b6a3672900d0c}{Weight\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A}, int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int l, int t1, int t2)
-\item 
-int \hyperlink{_image___recovery_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box} (\hyperlink{classpoint}{point} \hyperlink{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}{p}, int l)
+\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_af13f9094e47157d57fe3b63ff7ad57f1}{Center} (int l, int box, ostream \&log)
 \item 
 int \hyperlink{_image___recovery_8h_a14e94e6a7e1880598ed6d9fc3588669d}{Image\+\_\+\+Index} (int m, int n)
 \item 
@@ -58,178 +55,63 @@ double \hyperlink{_image___recovery_8h_ab10ccfd523ca128057e75d95bd0897e6}{Gamma\
 \item 
 double \hyperlink{_image___recovery_8h_a565266436efe544e627ee991647892ce}{Gamma\+\_\+\+D\+\_\+Y} (double sl)
 \item 
-double \hyperlink{_image___recovery_8h_ab82ce48e953537051e3bbae9b3358000}{Q} (int e)
-\item 
 double \hyperlink{_image___recovery_8h_a9506f98f883be991edacd12a2105dd8d}{W} (int w)
+\item 
+double \hyperlink{_image___recovery_8h_ab82ce48e953537051e3bbae9b3358000}{Q} (int e)
 \item 
 double \hyperlink{_image___recovery_8h_a788d8695493e8fbe8a998049de220e25}{S} (int s)
 \item 
-void \hyperlink{_image___recovery_8h_a104821657b13f54b621292608cefec18}{Image\+\_\+\+Recovery\+\_\+\+Butterfly} (double $\ast$\&recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data)
-\item 
-void \hyperlink{_image___recovery_8h_abfe1d8971eb97359fadf2eae913a240f}{Image\+\_\+\+Recovery\+\_\+\+Direct} (double $\ast$recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data)
-\item 
-void \hyperlink{_image___recovery_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}{Output\+\_\+\+Reflectivity} (double $\ast$reflectivity, string file\+\_\+name)
-\item 
-\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_a8c5905c2efae1339305542662cff74a4}{Grid\+\_\+\+Point} (double $\ast$grids, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t1, int t2, int l, ostream \&log)
-\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
-void \hyperlink{_image___recovery_8h_a52d1729c617ddfb9e7a33eaada2ab4cd}{Proto\+\_\+\+Grid} (double $\ast$fillme, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_addb4e343985cdce1d690cb22d2d7b087}{Grid} (double $\ast$grid, double $\ast$proto\+\_\+grid, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int l, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_a410bc84b87399ef0182942a49b23c7db}{Build\+\_\+\+Grids} (double $\ast$\&grids, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_a1a9b3d8db3f4202d35c6df080f59b635}{Log\+\_\+\+Grids} (double $\ast$\&grids, ostream \&log)
-\item 
-double \hyperlink{_image___recovery_8h_a2d1bc38cf6227eef1d7b451056a9c7f0}{L1d} (double $\ast$grids, int l, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int t, double x, ostream \&log)
-\item 
-double \hyperlink{_image___recovery_8h_ace05dbe0dad3c958492748dde4d076b2}{L2d} (double $\ast$grids, int t1, int t2, int \hyperlink{_target___generator_2_prototypes_8h_a9f0d7cd798b6721ffc5d910918578a98}{Box}, int l, \hyperlink{classpoint}{point} y, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_ac7750c1791f32c6893190e3e136cd1be}{Read\+\_\+\+In\+\_\+\+Data} (complex$<$ double $>$ $\ast$data, string file, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_a1c728a1d30427d7feace8e4a987fe5d3}{Swap} (complex$<$ double $>$ $\ast$\&current, complex$<$ double $>$ $\ast$\&previous, ostream \&log)
-\item 
-void \hyperlink{_image___recovery_8h_aabf258d2c2795ffa48f98b9c7d017413}{Zero} (complex$<$ double $>$ $\ast$weights, ostream \&log)
-\item 
-double \hyperlink{_image___recovery_8h_a6819ade65043183bc70e5cb2568fb94c}{Center1d} (int l, int box, ostream \&log)
-\item 
-\hyperlink{classpoint}{point} \hyperlink{_image___recovery_8h_af13f9094e47157d57fe3b63ff7ad57f1}{Center} (int l, int box, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_a9e497505d1fd07067f621dc0229b9bcf}{A} (int n, int l, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_af80582cfa8cc0518d60f5e512ad246da}{B} (int n, int l, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_afd9a8705005ee8e6252c901fa9e1f59f}{Parent} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A}, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_acc727c19af978660914564bb72315add}{Child} (int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int c, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_ad062be14de504a88bf836f3a9de72185}{Weight\+\_\+\+Index} (int \hyperlink{_target___generator_2_prototypes_8h_af848dc3b07b88f9286b59860c94b3f42}{A}, int \hyperlink{_target___generator_2_prototypes_8h_a4b8f9baf3002537eae57e8c034e3a388}{B}, int l, int t1, int t2, ostream \&log)
-\item 
-int \hyperlink{_image___recovery_8h_a9ee67c6f45f00d09b6b586c11e827271}{Box} (\hyperlink{classpoint}{point} \hyperlink{_target___generator_2_prototypes_8h_abe8880126524e4cd8a95094d7e70c4d7}{p}, int l, ostream \&log)
-\begin{DoxyCompactList}\small\item\em Find the box that p is in at level l. l=0 means only one cell. \end{DoxyCompactList}\item 
 void \hyperlink{_image___recovery_8h_ac70342239cabd203486b5af902460844}{Zero\+\_\+\+Grids} (double $\ast$grids)
 \item 
 void \hyperlink{_image___recovery_8h_a8f37a34ded6bb41f2a734c1218ef0dc7}{Image\+\_\+\+Recovery\+\_\+\+Butterfly} (double $\ast$\&recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data, ostream \&log)
 \item 
 void \hyperlink{_image___recovery_8h_a15a2b54cb9d8aa4d5abd90802b1bc34c}{Image\+\_\+\+Recovery\+\_\+\+Direct} (double $\ast$recovered\+\_\+reflectivity, complex$<$ double $>$ $\ast$data, ostream \&log)
+\item 
+void \hyperlink{_image___recovery_8h_acda7281a2631e1bdd2031e50d647fe27}{Output\+\_\+\+Reflectivity} (double $\ast$reflectivity, string file)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \hyperlink{_image___recovery_8h_a43016d873124d39034edb8cd164794db}{pi} =3.\+14159265359
+\item 
+const double \hyperlink{_image___recovery_8h_a238dd1656c08db3032dac4e8933ec29f}{c\+\_\+0} =299792458
+\item 
+const int \hyperlink{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N} =4
+\item 
+const int \hyperlink{_image___recovery_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}{M} =\hyperlink{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}$\ast$\hyperlink{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{_image___recovery_8h_af848dc3b07b88f9286b59860c94b3f42}\label{_image___recovery_8h_af848dc3b07b88f9286b59860c94b3f42}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!A@{A}}
-\index{A@{A}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{A()}{A()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int A (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a9e497505d1fd07067f621dc0229b9bcf}\label{_image___recovery_8h_a9e497505d1fd07067f621dc0229b9bcf}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!A@{A}}
-\index{A@{A}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{A()}{A()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int A (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 164 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a4b8f9baf3002537eae57e8c034e3a388}\label{_image___recovery_8h_a4b8f9baf3002537eae57e8c034e3a388}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!B@{B}}
-\index{B@{B}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{B()}{B()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int B (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_af80582cfa8cc0518d60f5e512ad246da}\label{_image___recovery_8h_af80582cfa8cc0518d60f5e512ad246da}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!B@{B}}
-\index{B@{B}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{B()}{B()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int B (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 170 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a9f0d7cd798b6721ffc5d910918578a98}\label{_image___recovery_8h_a9f0d7cd798b6721ffc5d910918578a98}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Box@{Box}}
-\index{Box@{Box}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Box()}{Box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Box (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{p,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a9ee67c6f45f00d09b6b586c11e827271}\label{_image___recovery_8h_a9ee67c6f45f00d09b6b586c11e827271}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Box@{Box}}
-\index{Box@{Box}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Box()}{Box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Box (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{p,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Find the box that p is in at level l. l=0 means only one cell. 
-
-
-
-Definition at line 191 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a2c8bbbf551b8475e4438c7e446c941c0}\label{_image___recovery_8h_a2c8bbbf551b8475e4438c7e446c941c0}} 
+\mbox{\Hypertarget{_image___recovery_8h_aaee6d4bac5b77750e8123b90b04b0f64}\label{_image___recovery_8h_aaee6d4bac5b77750e8123b90b04b0f64}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Build\+\_\+\+Grids@{Build\+\_\+\+Grids}}
 \index{Build\+\_\+\+Grids@{Build\+\_\+\+Grids}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Build\+\_\+\+Grids()}{Build\_Grids()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Build\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{grids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a410bc84b87399ef0182942a49b23c7db}\label{_image___recovery_8h_a410bc84b87399ef0182942a49b23c7db}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Build\+\_\+\+Grids@{Build\+\_\+\+Grids}}
-\index{Build\+\_\+\+Grids@{Build\+\_\+\+Grids}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Build\+\_\+\+Grids()}{Build\_Grids()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Build\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{grids,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Build\+\_\+\+Grids()}{Build\_Grids()}}
+{\footnotesize\ttfamily class \hyperlink{class_chebyshev_grid}{Chebyshev\+Grid} Build\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{grids,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})}
 
 
 
-Definition at line 78 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_ab57255986abfcbd0c8c100f66fbecebf}\label{_image___recovery_8h_ab57255986abfcbd0c8c100f66fbecebf}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Center@{Center}}
-\index{Center@{Center}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Center()}{Center()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classpoint}{point} Center (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Definition at line 184 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_af13f9094e47157d57fe3b63ff7ad57f1}\label{_image___recovery_8h_af13f9094e47157d57fe3b63ff7ad57f1}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Center@{Center}}
 \index{Center@{Center}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Center()}{Center()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Center()}{Center()}}
 {\footnotesize\ttfamily \hyperlink{classpoint}{point} Center (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 149 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a04e0507a2c37563637243ef47ae51175}\label{_image___recovery_8h_a04e0507a2c37563637243ef47ae51175}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Center1d@{Center1d}}
-\index{Center1d@{Center1d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Center1d()}{Center1d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double Center1d (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Definition at line 222 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a6819ade65043183bc70e5cb2568fb94c}\label{_image___recovery_8h_a6819ade65043183bc70e5cb2568fb94c}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Center1d@{Center1d}}
 \index{Center1d@{Center1d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Center1d()}{Center1d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Center1d()}{Center1d()}}
 {\footnotesize\ttfamily double Center1d (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{box,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 144 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a944697486df50806fbeca3ed8cdcfc1d}\label{_image___recovery_8h_a944697486df50806fbeca3ed8cdcfc1d}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Child@{Child}}
-\index{Child@{Child}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Child()}{Child()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Child (\begin{DoxyParamCaption}\item[{int}]{B,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_acc727c19af978660914564bb72315add}\label{_image___recovery_8h_acc727c19af978660914564bb72315add}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Child@{Child}}
-\index{Child@{Child}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Child()}{Child()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Child (\begin{DoxyParamCaption}\item[{int}]{B,  }\item[{int}]{c,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 180 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 217 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a3341b3789ebb3b250cb16a8da85fb685}\label{_image___recovery_8h_a3341b3789ebb3b250cb16a8da85fb685}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Data\+\_\+\+Index@{Data\+\_\+\+Index}}
@@ -239,7 +121,7 @@ Definition at line 180 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 200 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 231 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_ab10ccfd523ca128057e75d95bd0897e6}\label{_image___recovery_8h_ab10ccfd523ca128057e75d95bd0897e6}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Gamma\+\_\+\+D\+\_\+X@{Gamma\+\_\+\+D\+\_\+X}}
@@ -249,7 +131,7 @@ Definition at line 200 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 209 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 240 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a565266436efe544e627ee991647892ce}\label{_image___recovery_8h_a565266436efe544e627ee991647892ce}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Gamma\+\_\+\+D\+\_\+Y@{Gamma\+\_\+\+D\+\_\+Y}}
@@ -259,63 +141,43 @@ Definition at line 209 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 213 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 244 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_ac3f7a492d38929793b9a578ddb847b40}\label{_image___recovery_8h_ac3f7a492d38929793b9a578ddb847b40}} 
+\mbox{\Hypertarget{_image___recovery_8h_ae58c653757bb67d98686b671f1c44e12}\label{_image___recovery_8h_ae58c653757bb67d98686b671f1c44e12}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid@{Grid}}
 \index{Grid@{Grid}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid()}{Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{protogrid,  }\item[{int}]{Box,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_addb4e343985cdce1d690cb22d2d7b087}\label{_image___recovery_8h_addb4e343985cdce1d690cb22d2d7b087}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid@{Grid}}
-\index{Grid@{Grid}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid()}{Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{grid,  }\item[{double $\ast$}]{proto\+\_\+grid,  }\item[{int}]{Box,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily void Build\+\_\+\+Grids\+::\+Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{grid,  }\item[{double $\ast$}]{proto\+\_\+grid,  }\item[{int}]{Box,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 66 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 44 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_a60dd92eb39d20b28c6f5d62aa28dbc37}\label{_image___recovery_8h_a60dd92eb39d20b28c6f5d62aa28dbc37}} 
+\mbox{\Hypertarget{_image___recovery_8h_a62347f3241890f6d65a6e3af9a3bf962}\label{_image___recovery_8h_a62347f3241890f6d65a6e3af9a3bf962}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid\+\_\+\+Index@{Grid\+\_\+\+Index}}
 \index{Grid\+\_\+\+Index@{Grid\+\_\+\+Index}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid\+\_\+\+Index()}{Grid\_Index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Grid\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{Box,  }\item[{int}]{t,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Grid\+\_\+\+Index()}{Grid\_Index()}}
+{\footnotesize\ttfamily int Build\+\_\+\+Grids\+::\+Grid\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{Box,  }\item[{int}]{t,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 12 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 24 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_a288e22b57b6a275d2416b635628b912b}\label{_image___recovery_8h_a288e22b57b6a275d2416b635628b912b}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid\+\_\+\+Index@{Grid\+\_\+\+Index}}
-\index{Grid\+\_\+\+Index@{Grid\+\_\+\+Index}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid\+\_\+\+Index()}{Grid\_Index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Grid\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{Box,  }\item[{int}]{t,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-!!!!!!!!!!!!!!!!!\+Functions for image reconstruction!!!!!!// 
-
-\mbox{\Hypertarget{_image___recovery_8h_a7a65934f7f980eddd78a12d7e4df0340}\label{_image___recovery_8h_a7a65934f7f980eddd78a12d7e4df0340}} 
+\mbox{\Hypertarget{_image___recovery_8h_affc2a9db5bc53c5df9790971aedd5e74}\label{_image___recovery_8h_affc2a9db5bc53c5df9790971aedd5e74}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid\+\_\+\+Point@{Grid\+\_\+\+Point}}
 \index{Grid\+\_\+\+Point@{Grid\+\_\+\+Point}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid\+\_\+\+Point()}{Grid\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classpoint}{point} Grid\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{Box,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a8c5905c2efae1339305542662cff74a4}\label{_image___recovery_8h_a8c5905c2efae1339305542662cff74a4}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Grid\+\_\+\+Point@{Grid\+\_\+\+Point}}
-\index{Grid\+\_\+\+Point@{Grid\+\_\+\+Point}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Grid\+\_\+\+Point()}{Grid\_Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \hyperlink{classpoint}{point} Grid\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{Box,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Grid\+\_\+\+Point()}{Grid\_Point()}}
+{\footnotesize\ttfamily \hyperlink{classpoint}{point} Build\+\_\+\+Grids\+::\+Grid\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{Box,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{l,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
+Definition at line 28 of file Image\+\_\+\+Recovery.\+h.
 
-
-
-Definition at line 50 of file Image\+\_\+\+Recovery.\+h.
+\mbox{\Hypertarget{_image___recovery_8h_a5d6816662449d5e74ab1f78234044260}\label{_image___recovery_8h_a5d6816662449d5e74ab1f78234044260}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!i@{i}}
+\index{i@{i}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{i()}{i()}}
+{\footnotesize\ttfamily const complex$<$double$>$ i (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{_image___recovery_8h_a14e94e6a7e1880598ed6d9fc3588669d}\label{_image___recovery_8h_a14e94e6a7e1880598ed6d9fc3588669d}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Image\+\_\+\+Index@{Image\+\_\+\+Index}}
@@ -325,123 +187,57 @@ Definition at line 50 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 197 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a104821657b13f54b621292608cefec18}\label{_image___recovery_8h_a104821657b13f54b621292608cefec18}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}}
-\index{Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Butterfly()}{Image\_Recovery\_Butterfly()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Butterfly (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+Definition at line 228 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a8f37a34ded6bb41f2a734c1218ef0dc7}\label{_image___recovery_8h_a8f37a34ded6bb41f2a734c1218ef0dc7}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}}
 \index{Image\+\_\+\+Recovery\+\_\+\+Butterfly@{Image\+\_\+\+Recovery\+\_\+\+Butterfly}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Butterfly()}{Image\_Recovery\_Butterfly()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Butterfly()}{Image\_Recovery\_Butterfly()}}
 {\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Butterfly (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})}
 
 
 
-Definition at line 240 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_abfe1d8971eb97359fadf2eae913a240f}\label{_image___recovery_8h_abfe1d8971eb97359fadf2eae913a240f}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}}
-\index{Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Direct()}{Image\_Recovery\_Direct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Direct (\begin{DoxyParamCaption}\item[{double $\ast$}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+Definition at line 271 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a15a2b54cb9d8aa4d5abd90802b1bc34c}\label{_image___recovery_8h_a15a2b54cb9d8aa4d5abd90802b1bc34c}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}}
 \index{Image\+\_\+\+Recovery\+\_\+\+Direct@{Image\+\_\+\+Recovery\+\_\+\+Direct}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Direct()}{Image\_Recovery\_Direct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Recovery\+\_\+\+Direct()}{Image\_Recovery\_Direct()}}
 {\footnotesize\ttfamily void Image\+\_\+\+Recovery\+\_\+\+Direct (\begin{DoxyParamCaption}\item[{double $\ast$}]{recovered\+\_\+reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{data,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})}
 
 
 
-Definition at line 405 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 436 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_ab22ec241f3209be09e1e533fcc4ad346}\label{_image___recovery_8h_ab22ec241f3209be09e1e533fcc4ad346}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!L1d@{L1d}}
-\index{L1d@{L1d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{L1d()}{L1d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double L1d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{l,  }\item[{int}]{Box,  }\item[{int}]{t,  }\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a2d1bc38cf6227eef1d7b451056a9c7f0}\label{_image___recovery_8h_a2d1bc38cf6227eef1d7b451056a9c7f0}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!L1d@{L1d}}
-\index{L1d@{L1d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{L1d()}{L1d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily double L1d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{l,  }\item[{int}]{Box,  }\item[{int}]{t,  }\item[{double}]{x,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 100 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_ad21b6fd9efdf79f265b6fbd840ba3333}\label{_image___recovery_8h_ad21b6fd9efdf79f265b6fbd840ba3333}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!L2d@{L2d}}
-\index{L2d@{L2d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{L2d()}{L2d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double L2d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{B,  }\item[{int}]{l,  }\item[{\hyperlink{classpoint}{point}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_ace05dbe0dad3c958492748dde4d076b2}\label{_image___recovery_8h_ace05dbe0dad3c958492748dde4d076b2}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!L2d@{L2d}}
-\index{L2d@{L2d}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{L2d()}{L2d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily double L2d (\begin{DoxyParamCaption}\item[{double $\ast$}]{grids,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{int}]{Box,  }\item[{int}]{l,  }\item[{\hyperlink{classpoint}{point}}]{y,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 113 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a1a9b3d8db3f4202d35c6df080f59b635}\label{_image___recovery_8h_a1a9b3d8db3f4202d35c6df080f59b635}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Log\+\_\+\+Grids@{Log\+\_\+\+Grids}}
-\index{Log\+\_\+\+Grids@{Log\+\_\+\+Grids}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Log\+\_\+\+Grids()}{Log\_Grids()}}
-{\footnotesize\ttfamily void Log\+\_\+\+Grids (\begin{DoxyParamCaption}\item[{double $\ast$\&}]{grids,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 95 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}\label{_image___recovery_8h_a8071097e5121cc7ed6eceb1fe2b2a8fd}} 
+\mbox{\Hypertarget{_image___recovery_8h_acda7281a2631e1bdd2031e50d647fe27}\label{_image___recovery_8h_acda7281a2631e1bdd2031e50d647fe27}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Output\+\_\+\+Reflectivity@{Output\+\_\+\+Reflectivity}}
 \index{Output\+\_\+\+Reflectivity@{Output\+\_\+\+Reflectivity}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
 \subsubsection{\texorpdfstring{Output\+\_\+\+Reflectivity()}{Output\_Reflectivity()}}
-{\footnotesize\ttfamily void Output\+\_\+\+Reflectivity (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Output\+\_\+\+Reflectivity (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{string}]{file }\end{DoxyParamCaption})}
 
 
 
-Definition at line 438 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 469 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_ac9357020f779cea9bdfe84a05b2f9d44}\label{_image___recovery_8h_ac9357020f779cea9bdfe84a05b2f9d44}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Parent@{Parent}}
-\index{Parent@{Parent}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Parent()}{Parent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Parent (\begin{DoxyParamCaption}\item[{int}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_afd9a8705005ee8e6252c901fa9e1f59f}\label{_image___recovery_8h_afd9a8705005ee8e6252c901fa9e1f59f}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Parent@{Parent}}
-\index{Parent@{Parent}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Parent()}{Parent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Parent (\begin{DoxyParamCaption}\item[{int}]{A,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{_image___recovery_8h_a748e17292f693395243fe998c44ed79f}\label{_image___recovery_8h_a748e17292f693395243fe998c44ed79f}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!phi@{phi}}
+\index{phi@{phi}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{phi()}{phi()}}
+{\footnotesize\ttfamily double phi (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{x,  }\item[{\hyperlink{classpoint}{point}}]{y }\end{DoxyParamCaption})}
 
 
 
-Definition at line 175 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 21 of file Image\+\_\+\+Recovery.\+h.
 
-\mbox{\Hypertarget{_image___recovery_8h_a1ffab4d5e34be0967882300ec826a7c0}\label{_image___recovery_8h_a1ffab4d5e34be0967882300ec826a7c0}} 
+\mbox{\Hypertarget{_image___recovery_8h_a1977b3edd24258fda32b892bc8db92ac}\label{_image___recovery_8h_a1977b3edd24258fda32b892bc8db92ac}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}}
 \index{Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Proto\+\_\+\+Grid()}{Proto\_Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Proto\+\_\+\+Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{fillme }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_a52d1729c617ddfb9e7a33eaada2ab4cd}\label{_image___recovery_8h_a52d1729c617ddfb9e7a33eaada2ab4cd}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}}
-\index{Proto\+\_\+\+Grid@{Proto\+\_\+\+Grid}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Proto\+\_\+\+Grid()}{Proto\_Grid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Proto\+\_\+\+Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{fillme,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Proto\+\_\+\+Grid()}{Proto\_Grid()}}
+{\footnotesize\ttfamily void Build\+\_\+\+Grids\+::\+Proto\+\_\+\+Grid (\begin{DoxyParamCaption}\item[{double $\ast$}]{fillme,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 58 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 36 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_ab82ce48e953537051e3bbae9b3358000}\label{_image___recovery_8h_ab82ce48e953537051e3bbae9b3358000}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Q@{Q}}
@@ -451,17 +247,7 @@ Definition at line 58 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 221 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_ac7750c1791f32c6893190e3e136cd1be}\label{_image___recovery_8h_ac7750c1791f32c6893190e3e136cd1be}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Read\+\_\+\+In\+\_\+\+Data@{Read\+\_\+\+In\+\_\+\+Data}}
-\index{Read\+\_\+\+In\+\_\+\+Data@{Read\+\_\+\+In\+\_\+\+Data}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Read\+\_\+\+In\+\_\+\+Data()}{Read\_In\_Data()}}
-{\footnotesize\ttfamily void Read\+\_\+\+In\+\_\+\+Data (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{data,  }\item[{string}]{file,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 121 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 252 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a788d8695493e8fbe8a998049de220e25}\label{_image___recovery_8h_a788d8695493e8fbe8a998049de220e25}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!S@{S}}
@@ -471,23 +257,17 @@ Definition at line 121 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 224 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a3c1734cc6d5f500825aee562288a3926}\label{_image___recovery_8h_a3c1734cc6d5f500825aee562288a3926}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Swap@{Swap}}
-\index{Swap@{Swap}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Swap()}{Swap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Swap (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$\&}]{current,  }\item[{complex$<$ double $>$ $\ast$\&}]{previous }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Definition at line 255 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a1c728a1d30427d7feace8e4a987fe5d3}\label{_image___recovery_8h_a1c728a1d30427d7feace8e4a987fe5d3}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Swap@{Swap}}
 \index{Swap@{Swap}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Swap()}{Swap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
 {\footnotesize\ttfamily void Swap (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$\&}]{current,  }\item[{complex$<$ double $>$ $\ast$\&}]{previous,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 132 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 205 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a9506f98f883be991edacd12a2105dd8d}\label{_image___recovery_8h_a9506f98f883be991edacd12a2105dd8d}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!W@{W}}
@@ -497,23 +277,7 @@ Definition at line 132 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 217 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_afe52b0913e9641a3263b6a3672900d0c}\label{_image___recovery_8h_afe52b0913e9641a3263b6a3672900d0c}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Weight\+\_\+\+Index@{Weight\+\_\+\+Index}}
-\index{Weight\+\_\+\+Index@{Weight\+\_\+\+Index}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Weight\+\_\+\+Index()}{Weight\_Index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Weight\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{A,  }\item[{int}]{B,  }\item[{int}]{l,  }\item[{int}]{t1,  }\item[{int}]{t2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_image___recovery_8h_ad062be14de504a88bf836f3a9de72185}\label{_image___recovery_8h_ad062be14de504a88bf836f3a9de72185}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Weight\+\_\+\+Index@{Weight\+\_\+\+Index}}
-\index{Weight\+\_\+\+Index@{Weight\+\_\+\+Index}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Weight\+\_\+\+Index()}{Weight\_Index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Weight\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{A,  }\item[{int}]{B,  }\item[{int}]{l,  }\item[{int}]{t1,  }\item[{int}]{t2,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 184 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 248 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_aaa8c0f0c0fa51f2c1bf63d9d9fca49ea}\label{_image___recovery_8h_aaa8c0f0c0fa51f2c1bf63d9d9fca49ea}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!X@{X}}
@@ -523,7 +287,7 @@ Definition at line 184 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 203 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 234 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_a504ccb6f70325b74f611057c5b163ab3}\label{_image___recovery_8h_a504ccb6f70325b74f611057c5b163ab3}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Y@{Y}}
@@ -533,23 +297,17 @@ Definition at line 203 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 206 of file Image\+\_\+\+Recovery.\+h.
-
-\mbox{\Hypertarget{_image___recovery_8h_a834305736990425f924af8cfac37d9b1}\label{_image___recovery_8h_a834305736990425f924af8cfac37d9b1}} 
-\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Zero@{Zero}}
-\index{Zero@{Zero}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Zero()}{Zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Zero (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{weights }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Definition at line 237 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_aabf258d2c2795ffa48f98b9c7d017413}\label{_image___recovery_8h_aabf258d2c2795ffa48f98b9c7d017413}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Zero@{Zero}}
 \index{Zero@{Zero}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
-\subsubsection{\texorpdfstring{Zero()}{Zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Zero()}{Zero()}}
 {\footnotesize\ttfamily void Zero (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{weights,  }\item[{ostream \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 139 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 212 of file Image\+\_\+\+Recovery.\+h.
 
 \mbox{\Hypertarget{_image___recovery_8h_ac70342239cabd203486b5af902460844}\label{_image___recovery_8h_ac70342239cabd203486b5af902460844}} 
 \index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!Zero\+\_\+\+Grids@{Zero\+\_\+\+Grids}}
@@ -559,5 +317,48 @@ Definition at line 139 of file Image\+\_\+\+Recovery.\+h.
 
 
 
-Definition at line 228 of file Image\+\_\+\+Recovery.\+h.
+Definition at line 259 of file Image\+\_\+\+Recovery.\+h.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_image___recovery_8h_a238dd1656c08db3032dac4e8933ec29f}\label{_image___recovery_8h_a238dd1656c08db3032dac4e8933ec29f}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!c\+\_\+0@{c\+\_\+0}}
+\index{c\+\_\+0@{c\+\_\+0}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{c\+\_\+0}{c\_0}}
+{\footnotesize\ttfamily const double c\+\_\+0 =299792458}
+
+
+
+Definition at line 11 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_image___recovery_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}\label{_image___recovery_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!M@{M}}
+\index{M@{M}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily const int M =\hyperlink{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}$\ast$\hyperlink{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}
+
+
+
+Definition at line 15 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}\label{_image___recovery_8h_ab2b6b0c222cd1ce70d6a831f57241e59}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!N@{N}}
+\index{N@{N}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily const int N =4}
+
+
+
+Definition at line 14 of file Image\+\_\+\+Recovery.\+h.
+
+\mbox{\Hypertarget{_image___recovery_8h_a43016d873124d39034edb8cd164794db}\label{_image___recovery_8h_a43016d873124d39034edb8cd164794db}} 
+\index{Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}!pi@{pi}}
+\index{pi@{pi}!Image\+\_\+\+Recovery.\+h@{Image\+\_\+\+Recovery.\+h}}
+\subsubsection{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily const double pi =3.\+14159265359}
+
+
+
+Definition at line 10 of file Image\+\_\+\+Recovery.\+h.
 

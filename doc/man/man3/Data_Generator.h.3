@@ -1,14 +1,11 @@
-.TH "C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Data_Generator/Data_Generator.h" 3 "Mon May 1 2017" "Version .001" "Sythetic Aperture Radar Image Testing Suite" \" -*- nroff -*-
+.TH "Data_Generator/Data_Generator.h" 3 "Tue May 2 2017" "Version .101" "SITS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Data_Generator/Data_Generator.h
+Data_Generator/Data_Generator.h
 .SH SYNOPSIS
 .br
 .PP
-\fC#include 'input\&.h'\fP
-.br
-
 .SS "Classes"
 
 .in +1c
@@ -18,105 +15,78 @@ C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Data_Generator/Data
 .ti -1c
 .RI "class \fBDataGenerator2d\fP"
 .br
-.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
-.ti -1c
-.RI "class \fBData2d\fP"
-.br
-.ti -1c
-.RI "class \fBDataManifold\fP"
-.br
-.ti -1c
-.RI "class \fBField\fP"
-.br
 .in -1c
 .SS "Functions"
 
 .in +1c
 .ti -1c
-.RI "int \fBField_On_Support_Index\fP (int s, int w, int j)"
-.br
-.RI "!!!!!!Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// "
-.ti -1c
-.RI "void \fBRead_In_Reflectivity\fP (double *reflectivity, string file)"
+.RI "const complex< double > \fBi\fP (0, 1)"
 .br
 .ti -1c
-.RI "int \fBSize_Of_Support\fP (double *reflectivity)"
-.br
-.ti -1c
-.RI "complex< double > \fBIncident_Field\fP (int s, int w, double x, double y)"
-.br
-.ti -1c
-.RI "double \fBNorm\fP (double x, double y, double z)"
-.br
-.ti -1c
-.RI "complex< double > \fBG\fP (double x, double y, double z, double w)"
-.br
-.ti -1c
-.RI "complex< double > \fBScattered_Field_At_Point\fP (double x, double y, int w, int s, double *reflectivity, complex< double > *field_on_target_support, int \fBS\fP)"
-.br
-.ti -1c
-.RI "complex< double > * \fBGenerate_Data\fP (double *reflectivity, int \fBK\fP)"
-.br
-.ti -1c
-.RI "void \fBOutput_Data\fP (complex< double > *data, string file_name)"
-.br
-.ti -1c
-.RI "\fBData2d\fP Data \fBflight_path\fP (float t)"
-.br
-.ti -1c
-.RI "void \fBGenerate_Data\fP (string infilename)"
+.RI "complex< double > \fBf\fP (point y, complex< double > *d)"
 .br
 .in -1c
 .SS "Variables"
 
 .in +1c
 .ti -1c
-.RI "\fBDataGenerator2d\fP \fBformat\fP ='RAW'"
+.RI "const double \fBpi\fP =3\&.14159265359"
 .br
 .ti -1c
-.RI "point2d class \fBDataManifold\fP \fBflight_path\fP"
+.RI "const double \fBc_0\fP =299792458"
+.br
+.ti -1c
+.RI "const int \fBN\fP =4"
+.br
+.ti -1c
+.RI "const int \fBM\fP =\fBN\fP*\fBN\fP"
+.br
+.ti -1c
+.RI "const int \fBK\fP =1"
+.br
+.ti -1c
+.RI "const double \fBimage_height\fP =0"
+.br
+.ti -1c
+.RI "\fBDataGenerator2d\fP \fBformat\fP ='RAW'"
 .br
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "int Field_On_Support_Index (int s, int w, int j)\fC [inline]\fP"
+.SS "complex<double> f (point y, complex< double > * d)"
 
 .PP
-!!!!!!Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// 
-.SS "\fBData2d\fP Data flight_path (float t)"
-A SAR is a system that has a moving antenna which coherently 
-.SS "complex<double> G (double x, double y, double z, double w)\fC [inline]\fP"
+Definition at line 17 of file Data_Generator\&.h\&.
+.SS "const complex<double> i (0, 1)"
 
-.PP
-Definition at line 33 of file Input\&.h\&.
-.SS "complex<double>* Generate_Data (double * reflectivity, int K)"
-
-.SS "void Generate_Data (string infilename)"
-
-.PP
-Definition at line 206 of file Data_Generator\&.h\&.
-.SS "complex<double> Incident_Field (int s, int w, double x, double y)"
-
-.SS "double Norm (double x, double y, double z)\fC [inline]\fP"
-
-.PP
-Definition at line 37 of file Input\&.h\&.
-.SS "void Output_Data (complex< double > * data, string file_name)\fC [inline]\fP"
-
-.SS "void Read_In_Reflectivity (double * reflectivity, string file)"
-
-.SS "complex<double> Scattered_Field_At_Point (double x, double y, int w, int s, double * reflectivity, complex< double > * field_on_target_support, int S)"
-
-.SS "int Size_Of_Support (double * reflectivity)"
-
-.PP
-Definition at line 43 of file Target\&.h\&.
 .SH "Variable Documentation"
 .PP 
-.SS "point2d class \fBDataManifold\fP flight_path"
+.SS "const double c_0 =299792458"
 
+.PP
+Definition at line 3 of file Data_Generator\&.h\&.
 .SS " \fBDataGenerator2d\fP format ='RAW'"
+The data that we would collect physically\&. Data may have several dimensions\&. For example, there are three polarizations, slow time, fast time, flight pass, etc\&. Data can eithe be representedin frequency domain, or time domain\&. Typically if data is given in frequency domain, then for each pulse(slowtime bin), The collected data has a windowed Fourier transform aplied to it\&. This is either done in hardward, digitally\&. 
+.SS "const double image_height =0"
 
+.PP
+Definition at line 13 of file Data_Generator\&.h\&.
+.SS "const int K =1"
+
+.PP
+Definition at line 11 of file Data_Generator\&.h\&.
+.SS "const int M =\fBN\fP*\fBN\fP"
+
+.PP
+Definition at line 7 of file Data_Generator\&.h\&.
+.SS "const int N =4"
+
+.PP
+Definition at line 6 of file Data_Generator\&.h\&.
+.SS "const double pi =3\&.14159265359"
+
+.PP
+Definition at line 2 of file Data_Generator\&.h\&.
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Sythetic Aperture Radar Image Testing Suite from the source code\&.
+Generated automatically by Doxygen for SITS from the source code\&.

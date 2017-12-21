@@ -60,14 +60,30 @@ class DataGenerator2d: DataGenerator{
 }
 
 
-//The data that we would collect physically.  Data 
+///The data that we would collect physically.  Data may have several dimensions.
+///For example, there are three polarizations, slow time, fast time, flight pass, etc.
+///Data can eithe be representedin frequency domain, or time domain.  Typically if 
+///data is given in frequency domain, then for each pulse(slowtime bin), The collected 
+///data has a windowed Fourier transform aplied to it. This is either done in hardward, 
+///digitally.
 class Data{
     String format="RAW";
 
 };
 
+///
 class Data2d:Data{
 
+  void load_data(string file) {
+    ifstream input;
+    input.open(file.c_str());
+    for (int s = 0; s < N; s++) {
+      for (int w = 0; w < N; w++) {
+        input >> data[Data_Index(s, w)];
+      }
+    }
+    input.close();
+  
 
 }
 

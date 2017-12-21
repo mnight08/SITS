@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['w',['W',['../_data___generator_2_prototypes_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h']]],
-  ['weight_5findex',['Weight_Index',['../_data___generator_2_prototypes_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Prototypes.h'],['../_image___recovery_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#ad062be14de504a88bf836f3a9de72185',1,'Weight_Index(int A, int B, int l, int t1, int t2, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Prototypes.h']]]
+  ['zero',['Zero',['../_image___recovery_8h.html#aabf258d2c2795ffa48f98b9c7d017413',1,'Image_Recovery.h']]],
+  ['zero_5fgrids',['Zero_Grids',['../_image___recovery_8h.html#ac70342239cabd203486b5af902460844',1,'Image_Recovery.h']]]
 ];

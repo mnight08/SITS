@@ -1,152 +1,121 @@
-\hypertarget{_data___generator_8h}{}\section{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.h File Reference}
-\label{_data___generator_8h}\index{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.\+h@{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/\+Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.\+h}}
-{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+\hypertarget{_data___generator_8h}{}\section{Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.h File Reference}
+\label{_data___generator_8h}\index{Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator/\+Data\+\_\+\+Generator.\+h}}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_data_generator}{Data\+Generator}
 \item 
 class \hyperlink{class_data_generator2d}{Data\+Generator2d}
-\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
-class \hyperlink{class_data2d}{Data2d}
-\item 
-class \hyperlink{class_data_manifold}{Data\+Manifold}
-\item 
-class \hyperlink{class_field}{Field}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{_data___generator_8h_a325b4b80c42799ef04293ca89c91a8ec}{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index} (int s, int w, int j)
-\begin{DoxyCompactList}\small\item\em !!!!!!\+Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
-void \hyperlink{_data___generator_8h_a108bf510bc5bb509c831922e9c798eb8}{Read\+\_\+\+In\+\_\+\+Reflectivity} (double $\ast$reflectivity, string file)
+const complex$<$ double $>$ \hyperlink{_data___generator_8h_a5d6816662449d5e74ab1f78234044260}{i} (0, 1)
 \item 
-int \hyperlink{_data___generator_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}{Size\+\_\+\+Of\+\_\+\+Support} (double $\ast$reflectivity)
-\item 
-complex$<$ double $>$ \hyperlink{_data___generator_8h_a398a71365b23d1c040265d5533776c01}{Incident\+\_\+\+Field} (int s, int w, double x, double y)
-\item 
-double \hyperlink{_data___generator_8h_a7bda372c140e2175bfb8c5f407a3fa6f}{Norm} (double x, double y, double z)
-\item 
-complex$<$ double $>$ \hyperlink{_data___generator_8h_a974c700eb23491a012ceeab54d82cdc2}{G} (double x, double y, double z, double w)
-\item 
-complex$<$ double $>$ \hyperlink{_data___generator_8h_ae42eb598125814cc2888d4eadd7a04f8}{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point} (double x, double y, int w, int s, double $\ast$reflectivity, complex$<$ double $>$ $\ast$field\+\_\+on\+\_\+target\+\_\+support, int \hyperlink{_target___generator_2_prototypes_8h_a788d8695493e8fbe8a998049de220e25}{S})
-\item 
-complex$<$ double $>$ $\ast$ \hyperlink{_data___generator_8h_ac94ea0064b7e3823260dba9d5e91e2fa}{Generate\+\_\+\+Data} (double $\ast$reflectivity, int \hyperlink{_target___generator_2_input_8h_a7b63ccc35ac484b9f41e37ccd0cb31bd}{K})
-\item 
-void \hyperlink{_data___generator_8h_af552c71b8dfb2ef0f79eabc0025de558}{Output\+\_\+\+Data} (complex$<$ double $>$ $\ast$data, string file\+\_\+name)
-\item 
-\hyperlink{class_data2d}{Data2d} Data \hyperlink{_data___generator_8h_a5ee4670d3ae00ec99f8297e10f0a6467}{flight\+\_\+path} (float t)
-\item 
-void \hyperlink{_data___generator_8h_a8f082dd9626b5a1fb97fba5a6c236fb1}{Generate\+\_\+\+Data} (string infilename)
+complex$<$ double $>$ \hyperlink{_data___generator_8h_ad28d23d18460a766bace637017e0ffae}{f} (point y, complex$<$ double $>$ $\ast$d)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_data_generator2d}{Data\+Generator2d} \hyperlink{_data___generator_8h_aeb7bb2aca60ddfc3124525269662df7a}{format} =\char`\"{}R\+AW\char`\"{}
+const double \hyperlink{_data___generator_8h_a43016d873124d39034edb8cd164794db}{pi} =3.\+14159265359
 \item 
-point2d class \hyperlink{class_data_manifold}{Data\+Manifold} \hyperlink{_data___generator_8h_a38ad8d1091246bf456114eac49a0757f}{flight\+\_\+path}
+const double \hyperlink{_data___generator_8h_a238dd1656c08db3032dac4e8933ec29f}{c\+\_\+0} =299792458
+\item 
+const int \hyperlink{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N} =4
+\item 
+const int \hyperlink{_data___generator_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}{M} =\hyperlink{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}$\ast$\hyperlink{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}
+\item 
+const int \hyperlink{_data___generator_8h_a7b63ccc35ac484b9f41e37ccd0cb31bd}{K} =1
+\item 
+const double \hyperlink{_data___generator_8h_a96d9e72424bb3750a125bc08bba688ff}{image\+\_\+height} =0
+\item 
+\hyperlink{class_data_generator2d}{Data\+Generator2d} \hyperlink{_data___generator_8h_aeb7bb2aca60ddfc3124525269662df7a}{format} =\char`\"{}R\+AW\char`\"{}
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{_data___generator_8h_a325b4b80c42799ef04293ca89c91a8ec}\label{_data___generator_8h_a325b4b80c42799ef04293ca89c91a8ec}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index@{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index}}
-\index{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index@{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index()}{Field\_On\_Support\_Index()}}
-{\footnotesize\ttfamily int Field\+\_\+\+On\+\_\+\+Support\+\_\+\+Index (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{w,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{_data___generator_8h_ad28d23d18460a766bace637017e0ffae}\label{_data___generator_8h_ad28d23d18460a766bace637017e0ffae}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!f@{f}}
+\index{f@{f}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{f()}{f()}}
+{\footnotesize\ttfamily complex$<$double$>$ f (\begin{DoxyParamCaption}\item[{point}]{y,  }\item[{complex$<$ double $>$ $\ast$}]{d }\end{DoxyParamCaption})}
 
 
 
-!!!!!!\+Functions to data Generation!!!!!!!!!!!!!!!!!!!!!// 
+Definition at line 17 of file Data\+\_\+\+Generator.\+h.
 
-\mbox{\Hypertarget{_data___generator_8h_a5ee4670d3ae00ec99f8297e10f0a6467}\label{_data___generator_8h_a5ee4670d3ae00ec99f8297e10f0a6467}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!flight\+\_\+path@{flight\+\_\+path}}
-\index{flight\+\_\+path@{flight\+\_\+path}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{flight\+\_\+path()}{flight\_path()}}
-{\footnotesize\ttfamily \hyperlink{class_data2d}{Data2d} Data flight\+\_\+path (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
-
-A S\+AR is a system that has a moving antenna which coherently \mbox{\Hypertarget{_data___generator_8h_a974c700eb23491a012ceeab54d82cdc2}\label{_data___generator_8h_a974c700eb23491a012ceeab54d82cdc2}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!G@{G}}
-\index{G@{G}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{G()}{G()}}
-{\footnotesize\ttfamily complex$<$double$>$ G (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z,  }\item[{double}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 33 of file Input.\+h.
-
-\mbox{\Hypertarget{_data___generator_8h_ac94ea0064b7e3823260dba9d5e91e2fa}\label{_data___generator_8h_ac94ea0064b7e3823260dba9d5e91e2fa}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Generate\+\_\+\+Data@{Generate\+\_\+\+Data}}
-\index{Generate\+\_\+\+Data@{Generate\+\_\+\+Data}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Generate\+\_\+\+Data()}{Generate\_Data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily complex$<$double$>$$\ast$ Generate\+\_\+\+Data (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{int}]{K }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_data___generator_8h_a8f082dd9626b5a1fb97fba5a6c236fb1}\label{_data___generator_8h_a8f082dd9626b5a1fb97fba5a6c236fb1}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Generate\+\_\+\+Data@{Generate\+\_\+\+Data}}
-\index{Generate\+\_\+\+Data@{Generate\+\_\+\+Data}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Generate\+\_\+\+Data()}{Generate\_Data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Generate\+\_\+\+Data (\begin{DoxyParamCaption}\item[{string}]{infilename }\end{DoxyParamCaption})}
-
-
-
-Definition at line 206 of file Data\+\_\+\+Generator.\+h.
-
-\mbox{\Hypertarget{_data___generator_8h_a398a71365b23d1c040265d5533776c01}\label{_data___generator_8h_a398a71365b23d1c040265d5533776c01}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Incident\+\_\+\+Field@{Incident\+\_\+\+Field}}
-\index{Incident\+\_\+\+Field@{Incident\+\_\+\+Field}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Incident\+\_\+\+Field()}{Incident\_Field()}}
-{\footnotesize\ttfamily complex$<$double$>$ Incident\+\_\+\+Field (\begin{DoxyParamCaption}\item[{int}]{s,  }\item[{int}]{w,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_data___generator_8h_a7bda372c140e2175bfb8c5f407a3fa6f}\label{_data___generator_8h_a7bda372c140e2175bfb8c5f407a3fa6f}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Norm@{Norm}}
-\index{Norm@{Norm}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Norm()}{Norm()}}
-{\footnotesize\ttfamily double Norm (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Definition at line 37 of file Input.\+h.
-
-\mbox{\Hypertarget{_data___generator_8h_af552c71b8dfb2ef0f79eabc0025de558}\label{_data___generator_8h_af552c71b8dfb2ef0f79eabc0025de558}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Output\+\_\+\+Data@{Output\+\_\+\+Data}}
-\index{Output\+\_\+\+Data@{Output\+\_\+\+Data}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Output\+\_\+\+Data()}{Output\_Data()}}
-{\footnotesize\ttfamily void Output\+\_\+\+Data (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{data,  }\item[{string}]{file\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{_data___generator_8h_a108bf510bc5bb509c831922e9c798eb8}\label{_data___generator_8h_a108bf510bc5bb509c831922e9c798eb8}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Read\+\_\+\+In\+\_\+\+Reflectivity@{Read\+\_\+\+In\+\_\+\+Reflectivity}}
-\index{Read\+\_\+\+In\+\_\+\+Reflectivity@{Read\+\_\+\+In\+\_\+\+Reflectivity}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Read\+\_\+\+In\+\_\+\+Reflectivity()}{Read\_In\_Reflectivity()}}
-{\footnotesize\ttfamily void Read\+\_\+\+In\+\_\+\+Reflectivity (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity,  }\item[{string}]{file }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_data___generator_8h_ae42eb598125814cc2888d4eadd7a04f8}\label{_data___generator_8h_ae42eb598125814cc2888d4eadd7a04f8}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point@{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point}}
-\index{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point@{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point()}{Scattered\_Field\_At\_Point()}}
-{\footnotesize\ttfamily complex$<$double$>$ Scattered\+\_\+\+Field\+\_\+\+At\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{int}]{w,  }\item[{int}]{s,  }\item[{double $\ast$}]{reflectivity,  }\item[{complex$<$ double $>$ $\ast$}]{field\+\_\+on\+\_\+target\+\_\+support,  }\item[{int}]{S }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{_data___generator_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}\label{_data___generator_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}}
-\index{Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{Size\+\_\+\+Of\+\_\+\+Support()}{Size\_Of\_Support()}}
-{\footnotesize\ttfamily int Size\+\_\+\+Of\+\_\+\+Support (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity }\end{DoxyParamCaption})}
-
-
-
-Definition at line 43 of file Target.\+h.
+\mbox{\Hypertarget{_data___generator_8h_a5d6816662449d5e74ab1f78234044260}\label{_data___generator_8h_a5d6816662449d5e74ab1f78234044260}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!i@{i}}
+\index{i@{i}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{i()}{i()}}
+{\footnotesize\ttfamily const complex$<$double$>$ i (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
 
 
 
 \subsection{Variable Documentation}
-\mbox{\Hypertarget{_data___generator_8h_a38ad8d1091246bf456114eac49a0757f}\label{_data___generator_8h_a38ad8d1091246bf456114eac49a0757f}} 
-\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!flight\+\_\+path@{flight\+\_\+path}}
-\index{flight\+\_\+path@{flight\+\_\+path}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
-\subsubsection{\texorpdfstring{flight\+\_\+path}{flight\_path}}
-{\footnotesize\ttfamily point2d class \hyperlink{class_data_manifold}{Data\+Manifold} flight\+\_\+path}
+\mbox{\Hypertarget{_data___generator_8h_a238dd1656c08db3032dac4e8933ec29f}\label{_data___generator_8h_a238dd1656c08db3032dac4e8933ec29f}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!c\+\_\+0@{c\+\_\+0}}
+\index{c\+\_\+0@{c\+\_\+0}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{c\+\_\+0}{c\_0}}
+{\footnotesize\ttfamily const double c\+\_\+0 =299792458}
+
+
+
+Definition at line 3 of file Data\+\_\+\+Generator.\+h.
 
 \mbox{\Hypertarget{_data___generator_8h_aeb7bb2aca60ddfc3124525269662df7a}\label{_data___generator_8h_aeb7bb2aca60ddfc3124525269662df7a}} 
 \index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!format@{format}}
 \index{format@{format}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
 \subsubsection{\texorpdfstring{format}{format}}
 {\footnotesize\ttfamily  \hyperlink{class_data_generator2d}{Data\+Generator2d} format =\char`\"{}R\+AW\char`\"{}}
+
+The data that we would collect physically. Data may have several dimensions. For example, there are three polarizations, slow time, fast time, flight pass, etc. Data can eithe be representedin frequency domain, or time domain. Typically if data is given in frequency domain, then for each pulse(slowtime bin), The collected data has a windowed Fourier transform aplied to it. This is either done in hardward, digitally. \mbox{\Hypertarget{_data___generator_8h_a96d9e72424bb3750a125bc08bba688ff}\label{_data___generator_8h_a96d9e72424bb3750a125bc08bba688ff}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!image\+\_\+height@{image\+\_\+height}}
+\index{image\+\_\+height@{image\+\_\+height}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{image\+\_\+height}{image\_height}}
+{\footnotesize\ttfamily const double image\+\_\+height =0}
+
+
+
+Definition at line 13 of file Data\+\_\+\+Generator.\+h.
+
+\mbox{\Hypertarget{_data___generator_8h_a7b63ccc35ac484b9f41e37ccd0cb31bd}\label{_data___generator_8h_a7b63ccc35ac484b9f41e37ccd0cb31bd}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!K@{K}}
+\index{K@{K}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily const int K =1}
+
+
+
+Definition at line 11 of file Data\+\_\+\+Generator.\+h.
+
+\mbox{\Hypertarget{_data___generator_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}\label{_data___generator_8h_a9edc6895d567e0ddcdd3cc20df3f3b4b}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!M@{M}}
+\index{M@{M}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily const int M =\hyperlink{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}$\ast$\hyperlink{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}
+
+
+
+Definition at line 7 of file Data\+\_\+\+Generator.\+h.
+
+\mbox{\Hypertarget{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}\label{_data___generator_8h_ab2b6b0c222cd1ce70d6a831f57241e59}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!N@{N}}
+\index{N@{N}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily const int N =4}
+
+
+
+Definition at line 6 of file Data\+\_\+\+Generator.\+h.
+
+\mbox{\Hypertarget{_data___generator_8h_a43016d873124d39034edb8cd164794db}\label{_data___generator_8h_a43016d873124d39034edb8cd164794db}} 
+\index{Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}!pi@{pi}}
+\index{pi@{pi}!Data\+\_\+\+Generator.\+h@{Data\+\_\+\+Generator.\+h}}
+\subsubsection{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily const double pi =3.\+14159265359}
+
+
+
+Definition at line 2 of file Data\+\_\+\+Generator.\+h.
 

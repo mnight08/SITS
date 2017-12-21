@@ -1,11 +1,9 @@
-\hypertarget{_target_8h}{}\section{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/lib/\+Target.h File Reference}
-\label{_target_8h}\index{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/lib/\+Target.\+h@{C\+:/cygwin64/home/ez pawn/\+Projects, simulation, and code/\+S\+I\+T\+S/lib/\+Target.\+h}}
+\hypertarget{_target_8h}{}\section{lib/\+Target.h File Reference}
+\label{_target_8h}\index{lib/\+Target.\+h@{lib/\+Target.\+h}}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_target}{Target}
-\item 
-class \hyperlink{classpoint}{point}
 \item 
 class \hyperlink{class_target2d_s}{Target2dS}
 \item 
@@ -16,21 +14,13 @@ class \hyperlink{class_target2d_f}{Target2dF}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-complex$<$ double $>$ \hyperlink{_target_8h_ad28d23d18460a766bace637017e0ffae}{f} (\hyperlink{classpoint}{point} y, complex$<$ double $>$ $\ast$d)
-\begin{DoxyCompactList}\small\item\em !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// \end{DoxyCompactList}\item 
+complex$<$ double $>$ \hyperlink{_target_8h_ad28d23d18460a766bace637017e0ffae}{f} (point y, complex$<$ double $>$ $\ast$d)
+\item 
 complex$<$ double $>$ \hyperlink{_target_8h_abe8880126524e4cd8a95094d7e70c4d7}{p} (double w)
 \item 
 complex$<$ double $>$ \hyperlink{_target_8h_a1518bf2507ae0de796462fe244a92884}{interp} (complex$<$ double $>$ $\ast$d, double sl, double qj)
 \item 
-double \hyperlink{_target_8h_a748e17292f693395243fe998c44ed79f}{phi} (\hyperlink{classpoint}{point} x, \hyperlink{classpoint}{point} y)
-\item 
-double \hyperlink{_target_8h_a285206837634162341a856a6e2cf8594}{Gamma\+\_\+X} (double s)
-\item 
-double \hyperlink{_target_8h_a12a050b07dfebcf7bd1a42b264e56d10}{Gamma\+\_\+Y} (double s)
-\item 
-int \hyperlink{_target_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}{Size\+\_\+\+Of\+\_\+\+Support} (double $\ast$reflectivity)
-\item 
-void \hyperlink{_target_8h_a11f2141011fb5889943426775292b927}{Load\+Target} (string name)
+double \hyperlink{_target_8h_a748e17292f693395243fe998c44ed79f}{phi} (point x, point y)
 \end{DoxyCompactItemize}
 
 
@@ -39,35 +29,11 @@ void \hyperlink{_target_8h_a11f2141011fb5889943426775292b927}{Load\+Target} (str
 \index{Target.\+h@{Target.\+h}!f@{f}}
 \index{f@{f}!Target.\+h@{Target.\+h}}
 \subsubsection{\texorpdfstring{f()}{f()}}
-{\footnotesize\ttfamily complex$<$double$>$ f (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{y,  }\item[{complex$<$ double $>$ $\ast$}]{d }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily complex$<$double$>$ f (\begin{DoxyParamCaption}\item[{point}]{y,  }\item[{complex$<$ double $>$ $\ast$}]{d }\end{DoxyParamCaption})}
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
-
-!!!!!!!!!!!!!!!!!!\+Input functions!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
-
-Definition at line 71 of file Input.\+h.
-
-\mbox{\Hypertarget{_target_8h_a285206837634162341a856a6e2cf8594}\label{_target_8h_a285206837634162341a856a6e2cf8594}} 
-\index{Target.\+h@{Target.\+h}!Gamma\+\_\+X@{Gamma\+\_\+X}}
-\index{Gamma\+\_\+X@{Gamma\+\_\+X}!Target.\+h@{Target.\+h}}
-\subsubsection{\texorpdfstring{Gamma\+\_\+\+X()}{Gamma\_X()}}
-{\footnotesize\ttfamily double Gamma\+\_\+X (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
-
-
-
-Definition at line 41 of file Input.\+h.
-
-\mbox{\Hypertarget{_target_8h_a12a050b07dfebcf7bd1a42b264e56d10}\label{_target_8h_a12a050b07dfebcf7bd1a42b264e56d10}} 
-\index{Target.\+h@{Target.\+h}!Gamma\+\_\+Y@{Gamma\+\_\+Y}}
-\index{Gamma\+\_\+Y@{Gamma\+\_\+Y}!Target.\+h@{Target.\+h}}
-\subsubsection{\texorpdfstring{Gamma\+\_\+\+Y()}{Gamma\_Y()}}
-{\footnotesize\ttfamily double Gamma\+\_\+Y (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
-
-
-
-Definition at line 45 of file Input.\+h.
+Definition at line 17 of file Data\+\_\+\+Generator.\+h.
 
 \mbox{\Hypertarget{_target_8h_a1518bf2507ae0de796462fe244a92884}\label{_target_8h_a1518bf2507ae0de796462fe244a92884}} 
 \index{Target.\+h@{Target.\+h}!interp@{interp}}
@@ -75,47 +41,15 @@ Definition at line 45 of file Input.\+h.
 \subsubsection{\texorpdfstring{interp()}{interp()}}
 {\footnotesize\ttfamily complex$<$double$>$ interp (\begin{DoxyParamCaption}\item[{complex$<$ double $>$ $\ast$}]{d,  }\item[{double}]{sl,  }\item[{double}]{qj }\end{DoxyParamCaption})}
 
-
-
-Definition at line 56 of file Input.\+h.
-
-\mbox{\Hypertarget{_target_8h_a11f2141011fb5889943426775292b927}\label{_target_8h_a11f2141011fb5889943426775292b927}} 
-\index{Target.\+h@{Target.\+h}!Load\+Target@{Load\+Target}}
-\index{Load\+Target@{Load\+Target}!Target.\+h@{Target.\+h}}
-\subsubsection{\texorpdfstring{Load\+Target()}{LoadTarget()}}
-{\footnotesize\ttfamily void Load\+Target (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
-
-
-
-Definition at line 52 of file Target.\+h.
-
 \mbox{\Hypertarget{_target_8h_abe8880126524e4cd8a95094d7e70c4d7}\label{_target_8h_abe8880126524e4cd8a95094d7e70c4d7}} 
 \index{Target.\+h@{Target.\+h}!p@{p}}
 \index{p@{p}!Target.\+h@{Target.\+h}}
 \subsubsection{\texorpdfstring{p()}{p()}}
 {\footnotesize\ttfamily complex$<$double$>$ p (\begin{DoxyParamCaption}\item[{double}]{w }\end{DoxyParamCaption})}
 
-
-
-Definition at line 62 of file Input.\+h.
-
 \mbox{\Hypertarget{_target_8h_a748e17292f693395243fe998c44ed79f}\label{_target_8h_a748e17292f693395243fe998c44ed79f}} 
 \index{Target.\+h@{Target.\+h}!phi@{phi}}
 \index{phi@{phi}!Target.\+h@{Target.\+h}}
 \subsubsection{\texorpdfstring{phi()}{phi()}}
-{\footnotesize\ttfamily double phi (\begin{DoxyParamCaption}\item[{\hyperlink{classpoint}{point}}]{x,  }\item[{\hyperlink{classpoint}{point}}]{y }\end{DoxyParamCaption})}
-
-
-
-Definition at line 50 of file Input.\+h.
-
-\mbox{\Hypertarget{_target_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}\label{_target_8h_a79dbb3fdf60711e80d51c0c0c562e5f8}} 
-\index{Target.\+h@{Target.\+h}!Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}}
-\index{Size\+\_\+\+Of\+\_\+\+Support@{Size\+\_\+\+Of\+\_\+\+Support}!Target.\+h@{Target.\+h}}
-\subsubsection{\texorpdfstring{Size\+\_\+\+Of\+\_\+\+Support()}{Size\_Of\_Support()}}
-{\footnotesize\ttfamily int Size\+\_\+\+Of\+\_\+\+Support (\begin{DoxyParamCaption}\item[{double $\ast$}]{reflectivity }\end{DoxyParamCaption})}
-
-
-
-Definition at line 43 of file Target.\+h.
+{\footnotesize\ttfamily double phi (\begin{DoxyParamCaption}\item[{point}]{x,  }\item[{point}]{y }\end{DoxyParamCaption})}
 

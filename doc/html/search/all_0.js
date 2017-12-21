@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['a',['A',['../_data___generator_2_prototypes_8h.html#af848dc3b07b88f9286b59860c94b3f42',1,'A(int n, int l):&#160;Prototypes.h'],['../_image___recovery_8h.html#af848dc3b07b88f9286b59860c94b3f42',1,'A(int n, int l):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#a9e497505d1fd07067f621dc0229b9bcf',1,'A(int n, int l, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#af848dc3b07b88f9286b59860c94b3f42',1,'A(int n, int l):&#160;Prototypes.h']]]
+  ['antenna',['Antenna',['../class_antenna.html',1,'Antenna'],['../class_s_a_r.html#a834de6d160196af5d7ea31c4140fb684',1,'SAR::antenna()']]]
 ];

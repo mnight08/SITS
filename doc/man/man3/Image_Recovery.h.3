@@ -21,63 +21,57 @@ C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Image_Recovery/Imag
 \fC#include <math\&.h>\fP
 .br
 
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBImageRecovererNaive\fP"
+.br
+.ti -1c
+.RI "class \fBImageRecovererButterfly\fP"
+.br
+.ti -1c
+.RI "class \fBMath\fP"
+.br
+.ti -1c
+.RI "class \fBChebyshevGrid\fP"
+.br
+.in -1c
 .SS "Functions"
 
 .in +1c
 .ti -1c
-.RI "int \fBGrid_Index\fP (int \fBBox\fP, int t, int l, ostream &log)"
+.RI "const complex< double > \fBi\fP (0, 1)"
 .br
 .ti -1c
-.RI "int \fBGrid_Index\fP (int \fBBox\fP, int t, int l)"
-.br
-.RI "!!!!!!!!!!!!!!!!!Functions for image reconstruction!!!!!!// "
-.ti -1c
-.RI "\fBpoint\fP \fBGrid_Point\fP (double *grids, int \fBBox\fP, int t1, int t2, int l)"
+.RI "double \fBphi\fP (\fBpoint\fP x, \fBpoint\fP y)"
 .br
 .ti -1c
-.RI "void \fBProto_Grid\fP (double *fillme)"
+.RI "class \fBChebyshevGrid\fP \fBBuild_Grids\fP (double *&grids, ostream &log)"
 .br
 .ti -1c
-.RI "void \fBGrid\fP (double *protogrid, int \fBBox\fP, int l)"
+.RI "int \fBGrid_Index\fP (int Box, int t, int l, ostream &log)"
 .br
 .ti -1c
-.RI "void \fBBuild_Grids\fP (double *&grids)"
+.RI "\fBpoint\fP \fBGrid_Point\fP (double *grids, int Box, int t1, int t2, int l, ostream &log)"
 .br
 .ti -1c
-.RI "double \fBL1d\fP (double *grids, int l, int \fBBox\fP, int t, double x)"
+.RI "void \fBProto_Grid\fP (double *fillme, ostream &log)"
 .br
 .ti -1c
-.RI "double \fBL2d\fP (double *grids, int t1, int t2, int \fBB\fP, int l, \fBpoint\fP y)"
+.RI "void \fBGrid\fP (double *grid, double *proto_grid, int Box, int l, ostream &log)"
 .br
 .ti -1c
-.RI "void \fBSwap\fP (complex< double > *&current, complex< double > *&previous)"
+.RI "void \fBSwap\fP (complex< double > *&current, complex< double > *&previous, ostream &log)"
 .br
 .ti -1c
-.RI "void \fBZero\fP (complex< double > *weights)"
+.RI "void \fBZero\fP (complex< double > *weights, ostream &log)"
 .br
 .ti -1c
-.RI "double \fBCenter1d\fP (int l, int box)"
+.RI "double \fBCenter1d\fP (int l, int box, ostream &log)"
 .br
 .ti -1c
-.RI "\fBpoint\fP \fBCenter\fP (int l, int box)"
-.br
-.ti -1c
-.RI "int \fBA\fP (int n, int l)"
-.br
-.ti -1c
-.RI "int \fBB\fP (int n, int l)"
-.br
-.ti -1c
-.RI "int \fBParent\fP (int \fBA\fP)"
-.br
-.ti -1c
-.RI "int \fBChild\fP (int \fBB\fP, int c)"
-.br
-.ti -1c
-.RI "int \fBWeight_Index\fP (int \fBA\fP, int \fBB\fP, int l, int t1, int t2)"
-.br
-.ti -1c
-.RI "int \fBBox\fP (\fBpoint\fP \fBp\fP, int l)"
+.RI "\fBpoint\fP \fBCenter\fP (int l, int box, ostream &log)"
 .br
 .ti -1c
 .RI "int \fBImage_Index\fP (int m, int n)"
@@ -98,79 +92,14 @@ C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Image_Recovery/Imag
 .RI "double \fBGamma_D_Y\fP (double sl)"
 .br
 .ti -1c
-.RI "double \fBQ\fP (int e)"
+.RI "double \fBW\fP (int w)"
 .br
 .ti -1c
-.RI "double \fBW\fP (int w)"
+.RI "double \fBQ\fP (int e)"
 .br
 .ti -1c
 .RI "double \fBS\fP (int s)"
 .br
-.ti -1c
-.RI "void \fBImage_Recovery_Butterfly\fP (double *&recovered_reflectivity, complex< double > *data)"
-.br
-.ti -1c
-.RI "void \fBImage_Recovery_Direct\fP (double *recovered_reflectivity, complex< double > *data)"
-.br
-.ti -1c
-.RI "void \fBOutput_Reflectivity\fP (double *reflectivity, string file_name)"
-.br
-.ti -1c
-.RI "\fBpoint\fP \fBGrid_Point\fP (double *grids, int \fBBox\fP, int t1, int t2, int l, ostream &log)"
-.br
-.RI "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// "
-.ti -1c
-.RI "void \fBProto_Grid\fP (double *fillme, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBGrid\fP (double *grid, double *proto_grid, int \fBBox\fP, int l, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBBuild_Grids\fP (double *&grids, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBLog_Grids\fP (double *&grids, ostream &log)"
-.br
-.ti -1c
-.RI "double \fBL1d\fP (double *grids, int l, int \fBBox\fP, int t, double x, ostream &log)"
-.br
-.ti -1c
-.RI "double \fBL2d\fP (double *grids, int t1, int t2, int \fBBox\fP, int l, \fBpoint\fP y, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBRead_In_Data\fP (complex< double > *data, string file, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBSwap\fP (complex< double > *&current, complex< double > *&previous, ostream &log)"
-.br
-.ti -1c
-.RI "void \fBZero\fP (complex< double > *weights, ostream &log)"
-.br
-.ti -1c
-.RI "double \fBCenter1d\fP (int l, int box, ostream &log)"
-.br
-.ti -1c
-.RI "\fBpoint\fP \fBCenter\fP (int l, int box, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBA\fP (int n, int l, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBB\fP (int n, int l, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBParent\fP (int \fBA\fP, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBChild\fP (int \fBB\fP, int c, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBWeight_Index\fP (int \fBA\fP, int \fBB\fP, int l, int t1, int t2, ostream &log)"
-.br
-.ti -1c
-.RI "int \fBBox\fP (\fBpoint\fP \fBp\fP, int l, ostream &log)"
-.br
-.RI "Find the box that p is in at level l\&. l=0 means only one cell\&. "
 .ti -1c
 .RI "void \fBZero_Grids\fP (double *grids)"
 .br
@@ -180,181 +109,140 @@ C:/cygwin64/home/ez pawn/Projects, simulation, and code/SITS/Image_Recovery/Imag
 .ti -1c
 .RI "void \fBImage_Recovery_Direct\fP (double *recovered_reflectivity, complex< double > *data, ostream &log)"
 .br
+.ti -1c
+.RI "void \fBOutput_Reflectivity\fP (double *reflectivity, string file)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const double \fBpi\fP =3\&.14159265359"
+.br
+.ti -1c
+.RI "const double \fBc_0\fP =299792458"
+.br
+.ti -1c
+.RI "const int \fBN\fP =4"
+.br
+.ti -1c
+.RI "const int \fBM\fP =\fBN\fP*\fBN\fP"
+.br
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "int A (int n, int l)\fC [inline]\fP"
-
-.SS "int A (int n, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 164 of file Image_Recovery\&.h\&.
-.SS "int B (int n, int l)\fC [inline]\fP"
-
-.SS "int B (int n, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 170 of file Image_Recovery\&.h\&.
-.SS "int Box (\fBpoint\fP p, int l)\fC [inline]\fP"
-
-.SS "int Box (\fBpoint\fP p, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-Find the box that p is in at level l\&. l=0 means only one cell\&. 
-.PP
-Definition at line 191 of file Image_Recovery\&.h\&.
-.SS "void Build_Grids (double *& grids)\fC [inline]\fP"
-
-.SS "void Build_Grids (double *& grids, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 78 of file Image_Recovery\&.h\&.
-.SS "\fBpoint\fP Center (int l, int box)\fC [inline]\fP"
-
-.SS "\fBpoint\fP Center (int l, int box, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 149 of file Image_Recovery\&.h\&.
-.SS "double Center1d (int l, int box)\fC [inline]\fP"
-
-.SS "double Center1d (int l, int box, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 144 of file Image_Recovery\&.h\&.
-.SS "int Child (int B, int c)\fC [inline]\fP"
-
-.SS "int Child (int B, int c, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 180 of file Image_Recovery\&.h\&.
-.SS "int Data_Index (int s, int w)\fC [inline]\fP"
-
-.PP
-Definition at line 200 of file Image_Recovery\&.h\&.
-.SS "double Gamma_D_X (double sl)\fC [inline]\fP"
-
-.PP
-Definition at line 209 of file Image_Recovery\&.h\&.
-.SS "double Gamma_D_Y (double sl)\fC [inline]\fP"
-
-.PP
-Definition at line 213 of file Image_Recovery\&.h\&.
-.SS "void Grid (double * protogrid, int Box, int l)\fC [inline]\fP"
-
-.SS "void Grid (double * grid, double * proto_grid, int Box, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 66 of file Image_Recovery\&.h\&.
-.SS "int Grid_Index (int Box, int t, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 12 of file Image_Recovery\&.h\&.
-.SS "int Grid_Index (int Box, int t, int l)\fC [inline]\fP"
-
-.PP
-!!!!!!!!!!!!!!!!!Functions for image reconstruction!!!!!!// 
-.SS "\fBpoint\fP Grid_Point (double * grids, int Box, int t1, int t2, int l)\fC [inline]\fP"
-
-.SS "\fBpoint\fP Grid_Point (double * grids, int Box, int t1, int t2, int l, ostream & log)\fC [inline]\fP"
-
-.PP
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!// 
-.PP
-Definition at line 50 of file Image_Recovery\&.h\&.
-.SS "int Image_Index (int m, int n)\fC [inline]\fP"
-
-.PP
-Definition at line 197 of file Image_Recovery\&.h\&.
-.SS "void Image_Recovery_Butterfly (double *& recovered_reflectivity, complex< double > * data)"
-
-.SS "void Image_Recovery_Butterfly (double *& recovered_reflectivity, complex< double > * data, ostream & log)"
-
-.PP
-Definition at line 240 of file Image_Recovery\&.h\&.
-.SS "void Image_Recovery_Direct (double * recovered_reflectivity, complex< double > * data)"
-
-.SS "void Image_Recovery_Direct (double * recovered_reflectivity, complex< double > * data, ostream & log)"
-
-.PP
-Definition at line 405 of file Image_Recovery\&.h\&.
-.SS "double L1d (double * grids, int l, int Box, int t, double x)\fC [inline]\fP"
-
-.SS "double L1d (double * grids, int l, int Box, int t, double x, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 100 of file Image_Recovery\&.h\&.
-.SS "double L2d (double * grids, int t1, int t2, int B, int l, \fBpoint\fP y)\fC [inline]\fP"
-
-.SS "double L2d (double * grids, int t1, int t2, int Box, int l, \fBpoint\fP y, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 113 of file Image_Recovery\&.h\&.
-.SS "void Log_Grids (double *& grids, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 95 of file Image_Recovery\&.h\&.
-.SS "void Output_Reflectivity (double * reflectivity, string file_name)"
-
-.PP
-Definition at line 438 of file Image_Recovery\&.h\&.
-.SS "int Parent (int A)\fC [inline]\fP"
-
-.SS "int Parent (int A, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 175 of file Image_Recovery\&.h\&.
-.SS "void Proto_Grid (double * fillme)\fC [inline]\fP"
-
-.SS "void Proto_Grid (double * fillme, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 58 of file Image_Recovery\&.h\&.
-.SS "double Q (int e)\fC [inline]\fP"
-
-.PP
-Definition at line 221 of file Image_Recovery\&.h\&.
-.SS "void Read_In_Data (complex< double > * data, string file, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 121 of file Image_Recovery\&.h\&.
-.SS "double S (int s)\fC [inline]\fP"
-
-.PP
-Definition at line 224 of file Image_Recovery\&.h\&.
-.SS "void Swap (complex< double > *& current, complex< double > *& previous)\fC [inline]\fP"
-
-.SS "void Swap (complex< double > *& current, complex< double > *& previous, ostream & log)\fC [inline]\fP"
-
-.PP
-Definition at line 132 of file Image_Recovery\&.h\&.
-.SS "double W (int w)\fC [inline]\fP"
-
-.PP
-Definition at line 217 of file Image_Recovery\&.h\&.
-.SS "int Weight_Index (int A, int B, int l, int t1, int t2)\fC [inline]\fP"
-
-.SS "int Weight_Index (int A, int B, int l, int t1, int t2, ostream & log)\fC [inline]\fP"
+.SS "class \fBChebyshevGrid\fP Build_Grids (double *& grids, ostream & log)"
 
 .PP
 Definition at line 184 of file Image_Recovery\&.h\&.
-.SS "double X (int m)\fC [inline]\fP"
+.SS "\fBpoint\fP Center (int l, int box, ostream & log)\fC [inline]\fP"
 
 .PP
-Definition at line 203 of file Image_Recovery\&.h\&.
-.SS "double Y (int n)\fC [inline]\fP"
+Definition at line 222 of file Image_Recovery\&.h\&.
+.SS "double Center1d (int l, int box, ostream & log)\fC [inline]\fP"
 
 .PP
-Definition at line 206 of file Image_Recovery\&.h\&.
-.SS "void Zero (complex< double > * weights)\fC [inline]\fP"
-
-.SS "void Zero (complex< double > * weights, ostream & log)\fC [inline]\fP"
+Definition at line 217 of file Image_Recovery\&.h\&.
+.SS "int Data_Index (int s, int w)\fC [inline]\fP"
 
 .PP
-Definition at line 139 of file Image_Recovery\&.h\&.
-.SS "void Zero_Grids (double * grids)\fC [inline]\fP"
+Definition at line 231 of file Image_Recovery\&.h\&.
+.SS "double Gamma_D_X (double sl)\fC [inline]\fP"
+
+.PP
+Definition at line 240 of file Image_Recovery\&.h\&.
+.SS "double Gamma_D_Y (double sl)\fC [inline]\fP"
+
+.PP
+Definition at line 244 of file Image_Recovery\&.h\&.
+.SS "void Build_Grids::Grid (double * grid, double * proto_grid, int Box, int l, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file Image_Recovery\&.h\&.
+.SS "int Build_Grids::Grid_Index (int Box, int t, int l, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file Image_Recovery\&.h\&.
+.SS "\fBpoint\fP Build_Grids::Grid_Point (double * grids, int Box, int t1, int t2, int l, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file Image_Recovery\&.h\&.
+.SS "const complex<double> i (0, 1)"
+
+.SS "int Image_Index (int m, int n)\fC [inline]\fP"
 
 .PP
 Definition at line 228 of file Image_Recovery\&.h\&.
+.SS "void Image_Recovery_Butterfly (double *& recovered_reflectivity, complex< double > * data, ostream & log)"
+
+.PP
+Definition at line 271 of file Image_Recovery\&.h\&.
+.SS "void Image_Recovery_Direct (double * recovered_reflectivity, complex< double > * data, ostream & log)"
+
+.PP
+Definition at line 436 of file Image_Recovery\&.h\&.
+.SS "void Output_Reflectivity (double * reflectivity, string file)"
+
+.PP
+Definition at line 469 of file Image_Recovery\&.h\&.
+.SS "double phi (\fBpoint\fP x, \fBpoint\fP y)"
+
+.PP
+Definition at line 21 of file Image_Recovery\&.h\&.
+.SS "void Build_Grids::Proto_Grid (double * fillme, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 36 of file Image_Recovery\&.h\&.
+.SS "double Q (int e)\fC [inline]\fP"
+
+.PP
+Definition at line 252 of file Image_Recovery\&.h\&.
+.SS "double S (int s)\fC [inline]\fP"
+
+.PP
+Definition at line 255 of file Image_Recovery\&.h\&.
+.SS "void Swap (complex< double > *& current, complex< double > *& previous, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 205 of file Image_Recovery\&.h\&.
+.SS "double W (int w)\fC [inline]\fP"
+
+.PP
+Definition at line 248 of file Image_Recovery\&.h\&.
+.SS "double X (int m)\fC [inline]\fP"
+
+.PP
+Definition at line 234 of file Image_Recovery\&.h\&.
+.SS "double Y (int n)\fC [inline]\fP"
+
+.PP
+Definition at line 237 of file Image_Recovery\&.h\&.
+.SS "void Zero (complex< double > * weights, ostream & log)\fC [inline]\fP"
+
+.PP
+Definition at line 212 of file Image_Recovery\&.h\&.
+.SS "void Zero_Grids (double * grids)\fC [inline]\fP"
+
+.PP
+Definition at line 259 of file Image_Recovery\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "const double c_0 =299792458"
+
+.PP
+Definition at line 11 of file Image_Recovery\&.h\&.
+.SS "const int M =\fBN\fP*\fBN\fP"
+
+.PP
+Definition at line 15 of file Image_Recovery\&.h\&.
+.SS "const int N =4"
+
+.PP
+Definition at line 14 of file Image_Recovery\&.h\&.
+.SS "const double pi =3\&.14159265359"
+
+.PP
+Definition at line 10 of file Image_Recovery\&.h\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Sythetic Aperture Radar Image Testing Suite from the source code\&.

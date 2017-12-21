@@ -6,11 +6,9 @@ const double c_0=299792458;
 const int N=4;
 const int M=N*N;
 //number of scattering events to consider.
+
+
 const int K=1;
-//Be careful with this since, you assumed L=Log2(N)
-const int L=log2(N);
-const int q=16;
-const int r_eps=q*q;
 //image plane height
 const double image_height=0;
 
@@ -70,6 +68,16 @@ class Data{
 
 class Data2d:Data{
 
+  void load_data(string file) {
+    ifstream input;
+    input.open(file.c_str());
+    for (int s = 0; s < N; s++) {
+      for (int w = 0; w < N; w++) {
+        input >> data[Data_Index(s, w)];
+      }
+    }
+    input.close();
+  }
 
 }
 

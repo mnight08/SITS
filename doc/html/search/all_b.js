@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['n',['N',['../_data___generator_2_input_8h.html#ab2b6b0c222cd1ce70d6a831f57241e59',1,'N():&#160;Input.h'],['../_image___recovery_2_input_8h.html#ab2b6b0c222cd1ce70d6a831f57241e59',1,'N():&#160;Input.h'],['../_target___generator_2_input_8h.html#ab2b6b0c222cd1ce70d6a831f57241e59',1,'N():&#160;Input.h']]],
-  ['norm',['Norm',['../_data___generator_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h'],['../_data___generator_2_input_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h'],['../_data___generator_2_prototypes_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h'],['../_image___recovery_2_input_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h'],['../_target___generator_2_input_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h'],['../_target___generator_2_prototypes_8h.html#a7bda372c140e2175bfb8c5f407a3fa6f',1,'Norm(double x, double y, double z):&#160;Input.h']]]
+  ['sits',['SITS',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['sample_5frate',['sample_rate',['../class_s_a_r.html#aca187a89a350101ca7d1fad4d432f27b',1,'SAR']]],
+  ['sar',['SAR',['../class_s_a_r.html',1,'']]],
+  ['sar_2eh',['SAR.h',['../_s_a_r_8h.html',1,'']]],
+  ['signal',['Signal',['../class_signal.html',1,'']]]
 ];

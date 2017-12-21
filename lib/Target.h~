@@ -1,0 +1,63 @@
+/**
+ *A target represents a physical entity that we would scatter
+ an incident field. Currently, targets are assumed stationary. Subclasses include sampled targets, and function
+ targets.  A function target takes in a point and returns the reflectivity at that point.  A sampled target
+ is a discrete representation of the physical entity we are modeling.  
+ *
+ *
+ * */
+class Target{
+    virtual operator () (double x, double y);
+    virtual void write();
+    virtual void load();
+    virtual double reflectivity();
+
+    String format;
+        
+};
+
+
+complex<double> f(point y,complex<double>*d);
+complex<double> p(double w);
+complex<double> interp(complex<double>* d, double sl,double qj);
+double phi(point x,point y);
+
+///A sampled 2d target, consist of a collection of samples of the reflectivity function.
+///These samples are used to evaluate teh relfectivity function using some interpolation method.
+class Target2dS:Target{
+    double [][] samples;
+
+    //Number of non zero entries in $v$
+int Size_Of_Support(double *reflectivity){
+	int size=0;
+	for(int m=0;m<N;m++)
+		for(int n=0;n<N;n++)
+			if(reflectivity[Image_Index(m,n)]!=0)
+				size++;
+	return size;
+}
+    void Load(string name)
+    {
+    
+        //Reflectivities are real.  There are N^2=M image points.  
+            
+        ifstream input;
+        input.open((infile_name+".in").c_str());
+        for(int n=0;n<N;n++) {
+	    for(int m=0;m<N;m++){
+	        input>>reflectivity[Image_Index(m,n)];
+	    }
+        }
+        input.close();
+        }       
+
+    };
+
+class Target3dS:Target{};
+
+class Target2dF:Target{
+    
+};
+
+
+

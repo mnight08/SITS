@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['c_5f0',['c_0',['../_data___generator_2_input_8h.html#a238dd1656c08db3032dac4e8933ec29f',1,'c_0():&#160;Input.h'],['../_image___recovery_2_input_8h.html#a238dd1656c08db3032dac4e8933ec29f',1,'c_0():&#160;Input.h'],['../_target___generator_2_input_8h.html#a238dd1656c08db3032dac4e8933ec29f',1,'c_0():&#160;Input.h']]],
-  ['center',['Center',['../_data___generator_2_prototypes_8h.html#ab57255986abfcbd0c8c100f66fbecebf',1,'Center(int l, int box):&#160;Prototypes.h'],['../_image___recovery_8h.html#ab57255986abfcbd0c8c100f66fbecebf',1,'Center(int l, int box):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#af13f9094e47157d57fe3b63ff7ad57f1',1,'Center(int l, int box, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#ab57255986abfcbd0c8c100f66fbecebf',1,'Center(int l, int box):&#160;Prototypes.h']]],
-  ['center1d',['Center1d',['../_data___generator_2_prototypes_8h.html#a04e0507a2c37563637243ef47ae51175',1,'Center1d(int l, int box):&#160;Prototypes.h'],['../_image___recovery_8h.html#a04e0507a2c37563637243ef47ae51175',1,'Center1d(int l, int box):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#a6819ade65043183bc70e5cb2568fb94c',1,'Center1d(int l, int box, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#a04e0507a2c37563637243ef47ae51175',1,'Center1d(int l, int box):&#160;Prototypes.h']]],
-  ['child',['Child',['../_data___generator_2_prototypes_8h.html#a944697486df50806fbeca3ed8cdcfc1d',1,'Child(int B, int c):&#160;Prototypes.h'],['../_image___recovery_8h.html#a944697486df50806fbeca3ed8cdcfc1d',1,'Child(int B, int c):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#acc727c19af978660914564bb72315add',1,'Child(int B, int c, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#a944697486df50806fbeca3ed8cdcfc1d',1,'Child(int B, int c):&#160;Prototypes.h']]]
+  ['data',['data',['../class_s_a_r.html#a36a5fb0ba45e7fafc60cce11664fd81d',1,'SAR']]],
+  ['data_5fgeneration_5funit_5ftest_2ecpp',['Data_Generation_Unit_Test.cpp',['../_data___generation___unit___test_8cpp.html',1,'']]],
+  ['data_5fgenerator_2ecpp',['Data_Generator.cpp',['../_data___generator_8cpp.html',1,'']]],
+  ['data_5fgenerator_2eh',['Data_Generator.h',['../_data___generator_8h.html',1,'']]],
+  ['datagenerator',['DataGenerator',['../class_data_generator.html',1,'']]],
+  ['datagenerator2d',['DataGenerator2d',['../class_data_generator2d.html',1,'']]]
 ];

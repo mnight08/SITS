@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['w',['W',['../_data___generator_2_prototypes_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#a9506f98f883be991edacd12a2105dd8d',1,'W(int w):&#160;Image_Recovery.h']]],
-  ['w_5f0',['w_0',['../_data___generator_2_input_8h.html#a4bd7627e0aadee4ba01eb37bd6aba189',1,'w_0():&#160;Input.h'],['../_image___recovery_2_input_8h.html#a4bd7627e0aadee4ba01eb37bd6aba189',1,'w_0():&#160;Input.h'],['../_target___generator_2_input_8h.html#a4bd7627e0aadee4ba01eb37bd6aba189',1,'w_0():&#160;Input.h']]],
-  ['weight_5findex',['Weight_Index',['../_data___generator_2_prototypes_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Prototypes.h'],['../_image___recovery_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Image_Recovery.h'],['../_image___recovery_8h.html#ad062be14de504a88bf836f3a9de72185',1,'Weight_Index(int A, int B, int l, int t1, int t2, ostream &amp;log):&#160;Image_Recovery.h'],['../_target___generator_2_prototypes_8h.html#afe52b0913e9641a3263b6a3672900d0c',1,'Weight_Index(int A, int B, int l, int t1, int t2):&#160;Prototypes.h']]]
+  ['x',['x',['../classpoint.html#a9c6b34deaf4900ad4193c17935fd384a',1,'point::x()'],['../_image___recovery_8h.html#aaa8c0f0c0fa51f2c1bf63d9d9fca49ea',1,'X():&#160;Image_Recovery.h']]]
 ];

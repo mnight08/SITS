@@ -1,0 +1,42 @@
+#include <complex>
+#include <cstring>
+#include <fstream>
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include <string>
+
+/// Take a given sar system and convert its collected data into an estimate for
+/// the object that create that data.
+class ImageRecoverer {
+  Target estimate;
+  /// The system that collected the data
+  SAR sar;
+  // Assume the samples are uniform and given at $(i+1/2N,j+1/2N)$ for
+  // $i,j=0,1,\ldots N-1$  N is the number of slow time samples, frequency
+  // samples. There are $N^2$ space samples
+  const int N = 4;
+  const int M = N * N;
+
+  void write(string filename);
+  virtual void recover_target;
+
+  // number of scattering events to consider in image recovery.
+  const int K = 1;
+  // image plane height
+  const double image_height = 0;
+
+  void load_data(string file) {
+    ifstream input;
+    input.open(file.c_str());
+    for (int s = 0; s < N; s++) {
+      for (int w = 0; w < N; w++) {
+        input >> data[Data_Index(s, w)];
+      }
+    }
+    input.close();
+  }
+};
+class ImageRecoverer2d : ImageRecoverer {};
+
+class ImageRecoverer3d : ImageRecoverer {};

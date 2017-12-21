@@ -1,4 +1,4 @@
-.TH "Target" 3 "Mon May 1 2017" "Version .001" "Sythetic Aperture Radar Image Testing Suite" \" -*- nroff -*-
+.TH "Target" 3 "Tue May 2 2017" "Version .101" "SITS" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,12 +8,14 @@ Target
 .PP
 .PP
 \fC#include <Target\&.h>\fP
+.PP
+Inherited by \fBTarget2dF\fP\fC [private]\fP, \fBTarget2dS\fP\fC [private]\fP, and \fBTarget3dS\fP\fC [private]\fP\&.
 .SH "Detailed Description"
 .PP 
-A target represents a physical entity that we would scatter an incident field\&. Curently, targets are assumed stationary\&. Should relax this latter\&. Subclasses include sampled targets, and function targets\&. A function target takes in a point and returns the reflectivity at that point\&. 
+A target represents a physical entity that we would scatter an incident field\&. Currently, targets are assumed stationary\&. Subclasses include sampled targets, and function targets\&. A function target takes in a point and returns the reflectivity at that point\&. A sampled target is a discrete representation of the physical entity we are modeling\&. 
 .PP
-Definition at line 8 of file Target\&.h\&.
+Definition at line 9 of file Target\&.h\&.
 
 .SH "Author"
 .PP 
-Generated automatically by Doxygen for Sythetic Aperture Radar Image Testing Suite from the source code\&.
+Generated automatically by Doxygen for SITS from the source code\&.

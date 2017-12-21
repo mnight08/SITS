@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['m',['M',['../_data___generator_2_input_8h.html#a9edc6895d567e0ddcdd3cc20df3f3b4b',1,'M():&#160;Input.h'],['../_image___recovery_2_input_8h.html#a9edc6895d567e0ddcdd3cc20df3f3b4b',1,'M():&#160;Input.h'],['../_target___generator_2_input_8h.html#a9edc6895d567e0ddcdd3cc20df3f3b4b',1,'M():&#160;Input.h']]]
+  ['n',['N',['../_data___generator_8h.html#ab2b6b0c222cd1ce70d6a831f57241e59',1,'Data_Generator.h']]]
 ];
